@@ -1,0 +1,8046 @@
+                             java
+							   
+
+
+  ->what is java?
+  
+     ->java is object oriented programming language
+	 
+	 
+   purpose:
+     
+	    to develop the software/application
+		
+   what type of applications we have in IT industry?
+      
+	       ->desktop applications
+		   ->distributed applications or internet based applications
+		   
+		  	   
+	desktop applications?
+
+           acrobatic reader,calculator,notepad++....
+
+            results are not sharable across the globe.
+			
+    distributed applications?
+
+           facebook.com,gmail.com,....
+		   results are sharable across the globe.
+		   
+		   
+
+who invented this java?
+
+         jamesgosling -> from which vendor/organization ->sunmicrosystem
+		 
+		 
+		  now all copyrights of sun reserved by oracle corporation
+		  
+		  
+to refer any java related softwares/documentations/api's we should
+go for official website
+
+      www.oracle.com
+	  
+	  scjp -> ocjp
+	  
+	  
+
+ -in which year it got released  -> 1995
+
+
+ from 26 years onwards java is maintaining it's popularity
+
+   because of java has it's own unique charactersitics
+
+-simple
+-pi
+-portable
+-an
+-oop
+-mt
+-dynamic
+-distributed
+-secured
+-interpreted
+-robust
+-high performance
+
+ 
+  pi:
+  java is platform independent
+  
+    ->write once run anywhere
+	
+	
+prerequistes to write a java program:
+````````````````````````````````````
+->download the jdk software  from www.oracle.com
+->install the software
+->select the editor where we are writing the code
+->write the java program
+->save the java program(.java)
+->compile the java program
+->execute /run the java program
+
+
+	
+   
+1why should we compile the java program?
+````````````````````````````````````````
+    who will compile the java program?
+	
+	     java compiler 
+		 
+	what is java compiler?
+	
+	  java compiler is the system defined java program for the purpose
+	  of compiling the java program.
+	  
+	what do you mean by compilation?
+	
+	  java compiler will convert .java means source code to 
+	  .class file which contains byte code.
+	  
+	  
+	  ->java compiler is just focussing whether programmer must follow
+	    syntaxes or not?
+		
+	what is byte code?
+	  
+	   it is not a humban readable code.
+	   
+	   byte code is a machine level code which can be understanable
+	   by jvm(java virtual machine)
+	   
+	
+why should we go for execution?
+
+     to get the output 
+     java virtual machine
+  
+for jvm which is the input file ? .class file
+for java compiler which is the input file ? -> .java file (source code)
+
+  
+c programm -> turbo c
+cpp programm -> turbo cpp
+
+java program -> jdk
+jdk -> java development kit
+
+
+ whenever we install jdk in your machine are we able to
+ develop  java programs?
+ are we able to execute java programs?
+
+  jdk provides two environments
+
+     -dev environment
+     -execution environment
+
+jre:
+````
+jre stands for java runtime environment, it provides only
+
+  -runtime environment
+
+using this, we are allowed to execute the applications which got
+implemented using java.
+
+
+jvm:
+````
+jvm stands for java virtual machine, using this we are able to 
+execute the actual java program.
+
+teams -> jre
+->myself -> jvm
+
+
+  
+structure of java program:
+``````````````````````````
+ every java program should starts with by defining the class.
+ 
+ without class there is no java program.
+ 
+     class <classname>
+	 {
+	   //variables
+	   //methods
+	 }
+	 
+	
+in c program, to print any thing on console. which function we are 
+using?
+
+ printf()
+in c program, execution starts from main()
+
+
+in java program ? System.out.println("welcome to java");
+
+in java , execution starts from main()
+
+   how main() looks like in java?
+   
+      public static void main(String[] args)
+	  
+	  
+ 
+url to download the jdk software:
+
+  https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html
+  
+  
+  note:
+  `````
+  all the java reserved keywords must be in lower case
+  
+  command to compile the java program?
+  
+     javac <filename>.java
+	 
+	 javac Welcome.java
+	 
+	 
+   command to execute/run the java program?
+
+     java <classname>
+
+     java Welcome
+
+note:
+ every java program should starts with by defining class.
+ 
+ 
+ why java is object oriented programming language?
+ 
+  since it follows oops principles.
+  
+  these oops principles are given by 'OMG(object management group)'
+  
+  what are the oops principles we have?
+  
+    -polymorphism
+	-encapsulation
+	-abstraction
+	-inheritance
+	
+	
+in java programming language to implement above oops principles we are
+using two concepts those are 
+
+  -class
+  -object
+
+
+variable:
+``````````
+
+variable is the name of the memory location.
+
+  syntax:
+  ```````
+     <datatype> <variablename> = <value>;
+	 
+	 int stid = 100;
+
+java is strongly typed programming language, meaning that we have to
+specify the datatype while we are saving the data in the variable.
+
+datatype:
+``````````
+it represents type of the data which we are going to store in a variable.
+
+
+in java how many datatypes we have
+
+  -primitive dattypes(predefined datatypes) -> sunmicrosystem
+  
+  -non primitive datatypes-> java programmers
+  
+  
+  
+ primitives datatypes can be categorized into 4 types
+ 
+ 
+   1.integer -to store all integer values
+       -byte,short,int,long
+   2.float - to store decimal values
+       -float,double
+   3.character- to store single character data
+       -char
+   4.boolean-to store logical values either true or false.
+       -boolean
+	   
+	  
+	   //invalid--> byte b = 200;
+	   int x  = 200;
+	   short s = 200;
+	   long l = 200;
+	   
+note:
+`````
+every datatype has it's memory size and it's range
+
+ 
+   byte= 1byte 
+   short - 2bytes
+   int - 4 bytes
+   long - 8 bytes
+
+   
+how can i calculate the range of datatype:
+
+   -2^n-1 to (2^n-1) - 1	
+
+where n represents no.of bits
+
+byte - 1 byte - 8 bits
+
+   -2^7 to 2^7 - 1
+   -128 to 127
+
+   
+ note:
+ `````
+  //valid -> float f = 4.5f;
+  
+  note: 
+  by default, in java decimal type can be considered as double type
+  to make it as float type we have to specify f explicitly after the 
+  data.
+  
+  
+  for float , precision range is 5 digits
+  for double, precision range is 14 digits
+  
+   4.56789f
+   4.34324242342423424;
+   
+	 
+purpose:
+````````
+to hold the data , we are using variables.
+
+method:
+```````
+what is method?
+```````````````
+ method is the place where we are writing the logic to perform 
+ some operations based on the requirement.
+ 
+ 
+syntax:
+````````
+   [accessmodifier] <returntype> <methodname>([parameters if any])
+   {
+      //logic
+   }
+   
+ example:
+ 
+ //method without returning value and without parameters
+
+    public void display()
+    {
+      System.out.println("iam from display"); 
+    }
+
+	void represents it is not reurning anything.
+	
+	public double getRateOfInterest()
+	{
+	   return 5.6;
+	}
+	
+note:
+`````
+returntype and return value must be compatible with each otehr otherwise
+we will get compile time error.
+
+
+     public int sum(int x, int y)
+	 {
+	  return x+y;
+	 }
+
+class:
+```````
+
+ class is a collection of 
+ 
+    -variables
+	-& methods 
+	
+syntax:
+```````
+   class <classname>
+   {
+    //variables
+    //methods
+	//constructors,blocks,nested classes
+   }
+ 
+examples:
+`````````
+   class Student
+   {
+   //variables
+    int stid=100;
+    String stname="rama";
+    float stmarks=89.8f;
+	
+	//method
+       public void displayMarks()
+         {
+          System.out.println(stid + " " + stname + " " +stmarks);
+         }	
+   }//class closing	 
+ 
+note:
+````
+main() method is optional to compile the java program where as 
+main() is mandatory to execute the java program since execution starts
+from main() which can be invoked by jvm automatically.
+
+example:
+`````````
+   class Student
+   {
+   //variables
+   static int stid=100;
+   static String stname="rama";
+   static float stmarks=89.8f;
+	
+	   //our own method
+        public static void displayMarks()
+         {
+          System.out.println(stid + " " + stname + " " +stmarks);
+         }	
+		 
+	 public static void main(String[] args)
+	 {
+		 //calling method w.r.to classname
+		 Student.displayMarks();
+	 }
+   }
+   
+   
+in java, we have two areas are there.
+
+
+   -non-static area/instance area
+   -static area
+
+ 
+instance area:
+``````````````
+it is an area which belongs to instance method or non-static method
+or instance block.
+
+   //instance method
+   public void m1()
+   {
+     //instance area
+	 
+   }   
+ 
+static area:
+````````````
+ it is an area, which belongs to static method or static blocks
+  //static method
+  public static void m1()
+  {
+    //static area
+  }
+  
+  
+object:
+``````
+  instance of a classs.
+  
+  instance?
+  
+    
+  allocating sufficient amount of memory space for the instance properties
+  which we declared inside the class.
+  
+  
+  note:
+  `````
+  whenever we define the class, memory will not be created.
+  
+  syntax:
+  ``````
+   <clasname> <objectname> = new <classname>();
+   
+  ex:
+  
+     Student obj = new Student();
+	 Student -> name of the class
+	 obj --> name of the object
+	 = --> assignment operator
+	 
+	 new --> dynamic memory allocation operator
+	 Student() --> constructor
+	 
+example:
+````````
+   class Student
+   {
+   //non static or instance variables
+    int stid=100;
+    String stname="rama";
+    float stmarks=89.8f;
+	
+	   //instance method
+        public void displayMarks()
+         {
+			 //instance area
+          System.out.println(stid + " " + stname + " " +stmarks);
+         }	
+		 
+	 public static void main(String[] args)
+	 {
+		 //static area
+		 //object creation 
+		 Student obj= new Student();
+		 
+		 //calling instance method w.r.to object name
+		 
+		  obj.displayMarks();
+		 
+		 
+	 }
+   }
+   
+   
+ note:
+ `````
+ we are allowed to access static properties from any area either 
+ instance or static area like below
+ 
+    -w.r.to class name
+	-w.r.to object name
+	-direct access from same class
+	
+
+when should we go for declaring a property as static?
+
+  if the data is common for all objects then we can go for 
+  declaring that property as static
+
+   once we declare a property as static, memory allocation has done 
+   for one time at the time of loading the .class file into main memory.
+
+
+->memory will be created everytime whenever we create the object
+  for instance properties.
+
+  
+ example:
+ `````````
+    class Student
+   {
+   //non static or instance variables
+    int stid=100;
+    String stname="rama";
+    float stmarks=89.8f;
+	
+	//static variable
+	static String collegeName = "cbit";
+	
+	
+	   //instance method
+        public void displayMarks()
+         {
+			 //instance area
+          System.out.println(stid + " " + stname + " " +stmarks);
+         }	
+		 
+	 public static void main(String[] args)
+	 {
+		 //static area
+		 //object creation 
+		 Student obj= new Student();
+		 
+		 //calling instance method w.r.to object name
+		 
+		  obj.displayMarks();
+		  
+		  System.out.println("============");
+		  System.out.println("College name is "  + Student.collegeName);
+		  System.out.println("College name is "  + collegeName);
+		  System.out.println("College name is "  + obj.collegeName);
+		 
+		 
+	 }
+   }
+   
+   
+	
+syntax:
+``````
+   <classname> <objectname> = new <classname>();
+   
+   <classname>() -> constructor
+   
+   
+develop the java program using eclipse ide:
+`````````````````````````````````````````````
+
+ide : integrated development environment
+
+the code which we are writing in the ide is autocompiled
+means we no need to compile explicitly.
+
+   
+ how to download and install eclipse:
+ 
+
+	https://www.eclipse.org/downloads/packages/release/helios/sr1/eclipse-ide-java-developers
+	
+	
+	
+	once download done, extract the zip file and from there
+	open eclipse folder in that folder you can find eclipse 
+	application
+	
+	double click on that 
+	
+	choose the workspace where you would like to save your programs
+	
+	launch it
+	
+	create java project
+	
+	give project name: 
+	
+	finish
+	
+	under src folder -> right click -> class name
+	
+	define the code
+	
+	execute it
+	
+	
+constructor:
+````````````
+ for initialization 
+ 
+    int a;//variable declaration
+	a = 100;//value assignment
+	
+	
+	int a  = 100; //variable initialization
+	
+	
+constructor is a special member method , 
+for the purpose of initalizing the data.
+
+rules or points to remember about constructor:
+``````````````````````````````````````````````
+->constructor name must be similar to class name
+->constructor should not return anything even void also
+->constructor cannot be inherited
+->constructor should not be static
+
+
+   Student obj = new Student();
+   
+
+without consturctor example:
+````````````````````````````
+
+public class Student {
+	
+	//variables declaration
+	 int stid;
+	 String stname;
+	 
+	 //to assign the values
+	 public void assign()
+	 {
+		 stid=100;
+		 stname="Rama";
+	 }
+	 
+	 public static void main(String[] args) {
+		Student obj = new Student();
+		//explicit method invocation is required
+		obj.assign();
+		System.out.println(obj.stid);
+		System.out.println(obj.stname);
+		 
+	}
+
+}
+
+
+with constructor example:
+`````````````````````````
+
+public class Student {
+	
+	//variables declaration
+	 int stid;
+	 String stname;
+	 
+	 //user defined default constructor 
+	 public Student()
+	 {
+		 //initalization logic
+		 stid=100;
+		 stname="Rama";
+	 }
+	 
+	 public static void main(String[] args) {
+		 
+		 //object creation cum constructor calling
+		Student obj = new Student();
+		
+		System.out.println(obj.stid);
+		System.out.println(obj.stname);
+		 
+	}
+
+}
+
+
+types of constructors:
+````````````````````````
+we have two types
+
+  1.default/no-argument
+      system defined default constructor -> intializing default values based on the datatype
+	  user defined default ->initializing our own values
+	  
+  2.parameterized   
+   
+       it is also a constructor which takes parameters or arguments.
+	   
+
+example on parameterized constructor:
+`````````````````````````````````````
+
+public class Student {
+
+	// variables declaration
+	int stid;
+	String stname;
+
+	// parameterized constructor
+	public Student(int x, String y) {
+		// assigning local values to class level variables
+
+		stid = x;
+		stname = y;
+
+	}
+
+	public static void main(String[] args) {
+
+		// object creation cum constructor calling
+		Student obj = new Student(100, "Rama");
+
+		System.out.println(obj.stid);
+		System.out.println(obj.stname);
+
+	}
+
+}
+
+
+	   
+default constructor vs parameterized constructor:
+`````````````````````````````````````````````````
+The default constructor is a constructor that the compiler 
+automatically generates in the absence of any programmer-defined 
+constructors. Conversely, the parameterized constructor is a 
+constructor that the programmer creates with one or more parameters 
+to initialize the instance variables of a class.
+
+
+question: in a class , how many constructors we can define?
+
+
+  answer: as many as we want based on requiremnt.
+  
+ 
+this()-> is for calling current class default constructor
+
+this(.) -> is for calling current class single parameterized constructor
+
+this(..) --> is for calling current class double parameterized constructor
+
+
+note:
+`````
+constructor calling always must be  first executable statement in
+consturctor otherwise we will get compile time error.
+ 
+ 
+example on this() or constructor chaining:
+```````````````````````````````````````````
+
+public class Student {
+
+
+
+	// parameterized constructor
+	public Student(int x, String y) {
+		
+		//calling current class default constructor
+		this();
+		System.out.println("iam double parameterized constructor");
+		
+	}
+	public Student()
+	{
+		//calling current class single parameteirzed constructor
+		
+		this(44);
+		System.out.println("iam default constructor");
+	}
+	
+	public Student(int x)
+	{
+		System.out.println("Iam single parameterized constructor");
+	}
+
+	public static void main(String[] args) {
+
+		// object creation cum constructor calling
+		Student obj = new Student(100, "Rama");
+		
+
+		
+
+	}
+
+}
+
+
+
+ 
+ 
+
+this:
+`````
+this is a java reserved keyword,it is always pointing current class 
+object.
+
+
+	to differentiate class level varaibles local variables when both
+    are same.
+
+
+syntax:
+       this.<classlevelvariable> = <localvariable>;
+
+
+example:
+``````````
+
+public class Student {
+
+   int stid;
+   String stname;
+
+	 public Student( int stid, String stname)
+	 {
+		 this.stid=stid;
+		 this.stname=stname;
+	 }
+
+	public static void main(String[] args) {
+
+		// object creation cum constructor calling
+		Student obj = new Student(100, "Rama");
+		
+		System.out.println("student id: " + obj.stid);
+		System.out.println("student name: " + obj.stname);
+
+		
+
+	}
+
+}
+
+
+note:
+`````
+this is the java reserved keyword used in two ways
+
+  1.to differentiate class level variables with local variables.
+  2.to invoke constructor from another constructor of current class.
+
+
+ -------------------------------------------------------------------------
+ day-2(dec 6th,2021)
+ 
+   oops principles
+    
+	  1.inheritance
+	  2.polymorphism
+	  3.abstraction
+	  4.encapsulation
+	  
+	  class & object
+ 
+ inheritance:
+ `````````````
+  ->the process of taking the properties from one class to another class
+    is known as inheritance.
+	
+  ->the class which is giving the proeprties is known as parent/super/base
+    class.
+	
+  ->the class which is taking the properties is known as child/sub/derived
+    class.
+	
+	
+  ->using extends keyword we can take the properties from one class to 
+    another class.
+	
+	
+syntax:
+``````
+       class C
+	   {
+	   }
+       //Parent class
+       class A
+	   {
+	   }
+	   //child class
+	   class B extends A
+	   {
+	   }
+	   
+	note: multiple inheritance is not possible in java w.r.to classes
+	it is something possible w.r.to interfaces.
+	
+note:
+````
+using extends keyword, we are allowed to take the properties from 
+single class to single class.
+
+advantage:
+``````````
+ ->duplication of the code will be decreased
+ ->memory usage will be decreased
+ ->reusability achieved
+
+ because of all above factors, performance of the application improved.
+
+
+note:
+````
+whenever we apply inheritance concept it is highly recommended to 
+create the object for child class, since child class contains parent class
+properties and child class proeprties.
+
+
+ 
+public class Parent {
+
+	//logic
+	 public void sum(int x, int y)
+	 {
+		 System.out.println("sum is : " +(x+y));
+	 }
+}
+
+
+
+public class Child extends Parent{
+	
+	public static void main(String[] args) {
+		
+		Child obj = new Child();
+		obj.sum(4, 5);
+	}
+
+}
+
+note:
+`````
+in java, every class whether it is pre-defined or user defined
+it is a sub class / child class of Object(java.lang package)
+
+Object is the root class for every java class.
+
+
+
+class Parent 
+{
+}
+class Child extends Parent
+{
+}
+
+class Intermediate extends Child
+{
+}
+
+basic example on Object class:
+```````````````````````````````
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+		Test2 obj = new Test2();
+		System.out.println(obj.toString());
+		
+		System.out.println(obj.getClass());
+		
+	   
+		
+	}
+
+}
+
+
+polymorphism:
+`````````````
+it is also one of the oop principle.
+
+one action can be achieved in many forms.
+
+
+ ->employee object
+ ->son/daughter
+ 
+using method overloading and method overriding
+
+method overloaing:
+```````````````````
+  method name is same 
+  but signature is different.
+  
+ signature:
+
+   -no.of paramters
+   -type of parameters
+   -order of parametrs
+
+
+ note:
+to achieve method overloading, single java class in enough.
+
+usage:
+```````
+method overloading increases readability of the program
+
+   
+		sum of 100 numbers
+		
+		  100 methods are required
+		  
+		  sum2()
+		  threeSum()
+		  4Sum()
+		  
+		  
+  
+  
+  
+  -method overloading increases readability of the program.
+  
+  -this provides flexibility to programmers  so that 
+   they can call the same method for different types of data.
+   
+  -this makes the code look clean.
+  
+  
+example:
+````````
+
+public class Test2 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("Integer sum is : " +(x+y));
+	}
+	
+	public void sum(float x, float y)
+	{
+		System.out.println("float sum is : " +(x+y));
+	}
+
+	 public static void main(String[] args)
+	 {
+		 Test2 obj= new Test2();
+		 obj.sum(1, 2);
+		 obj.sum(4.5f,4.4f);
+	 }
+}
+
+ 
+  
+  
+method overriding:
+``````````````````
+
+  method name is same
+but logic is different from parent class to child class.
+
+  
+ note:
+ `````
+ to achieve method overriding we require minimum 2 classes with 
+ parent child relation or is-a relation.
+ 
+ 
+ advantage:
+ ``````````
+ 
+->the main advantage is the class can give it's own specific 
+  implementation to a inherited method without even modifying
+  the parent class code.
+  
+  
+ example:
+ ````````
+ 
+public class Child extends Parent{
+	
+	//logic of child class
+	 public void sum(int x, int y)
+	 {
+		 //call or invoke super class or parent class method
+		 super.sum(5, 4);
+	   System.out.println("integer sub is " + (x-y));
+	 }
+	
+	public static void main(String[] args) {
+		
+		Child obj = new Child();
+		obj.sum(5,4);
+		
+		
+		/*
+		 * Parent obj1 = new Parent(); 
+		 * obj1.sum(5, 4);
+		 */
+	}
+
+}
+
+note
+`````
+super is  a java reserved keyword for the purpose of referring immediate
+parent class properties from the context of child class.
+
+overriding pre-defined methods example:
+````````````````````````````````````````
+//child class
+public class Test1 {
+	
+	//overriding the logic of toString() of Object class based on requirement
+	public String toString()
+	{
+		return "capg";
+	}
+
+	public static void main(String[] args) {
+		
+		
+		Test1 obj = new Test1();
+		
+		System.out.println(obj);
+	}
+}
+
+
+ assignments:
+ ````````````
+ try to access super class vairables using super
+ try to access parent class constructors from child class using 
+ super keyword.
+ 
+ 
+ super at variable level:
+ ````````````````````````
+ 
+public class Child extends Parent{
+	
+	int stid=200;
+	public void display()
+	{
+		System.out.println("parent class student id is : " +super.stid);
+		System.out.println("student id is : " + this.stid);
+	}
+	public static void main(String[] args) {
+		
+		Child obj = new Child();
+		obj.display();
+		
+		
+	}
+
+}
+
+
+super at constructor level:
+````````````````````````````
+
+->why constructor should not be inherited.
+
+
+
+answer:
+if we inherit the constructor from parent class to child class, it is 
+voilating the rule of constructor saying constructor name must be
+similar to class name.
+
+
+super():
+
+ this is the syntax which we are using to access parent class 
+ default constructor from the context of child class constructor
+ 
+ ->writing this super() is optional , because this will be added
+   by java compiler.
+   
+   
+Parent.java:
+````````````
+public class Parent {
+
+	public Parent()
+	{
+		System.out.println("parent class default constructor");
+	}
+}
+
+
+Child.java:
+````````````
+
+public class Child extends Parent{
+	
+	public Child()
+	{
+		//it will call parent class default constructor
+		super();//optional to write
+		System.out.println("child class default constructor");
+	}
+	public static void main(String[] args) {
+		
+		Child obj = new Child();
+		
+	}
+
+}
+
+
+
+note:
+````
+to invoke parent class default constructor from child class constructor
+writing or using super() is optional.
+
+but to invoke parent class parameterized constructor from child class
+constructor using or writing super() is mandatory.
+
+the reason is default constructor is available in only one form 
+but parameteirzed constructor is available in multiple forms.
+
+example on this() and super():
+````````````````````````````````
+this()->calling current class default constructor
+this(..)-> calling current class parameterized constructor
+super()--> calling parent class default constructor
+super(..) ->calling parent class parameterized constructor
+
+
+Parent.java:
+````````````
+
+public class Parent {
+
+	public Parent()
+	{
+		System.out.println("parent class default constructor");
+	}
+	
+	public Parent(int x)
+	{
+		//calling current class default constructor
+		this();
+		System.out.println("parent class parameterized constructor");
+	}
+}
+
+Child.java:
+```````````
+
+public class Child extends Parent{
+	
+	public Child()
+	{
+		//calling current class parameterized constructor
+		this(3);
+		System.out.println("child class default constructor");
+	}
+	
+	public Child(int x)
+	{
+		// calling parent class parameterized constructor
+		super(5);
+		System.out.println("child class parameterized constructor");
+	}
+	public static void main(String[] args) {
+		
+		Child obj = new Child();
+		
+	}
+
+}
+
+
+
+
+encapsulation:
+``````````````
+encapsulation is the process of wrapping or binding the data members
+and member methods into a single unit.
+
+example:
+``````````
+ java class is the best example of an encapsulation
+ 
+ 
+class Test
+{
+ int a; 
+ public void show()
+ {
+ }
+}
+
+how can we achieve data hiding:
+```````````````````````````````
+using access modifiers
+
+ by declaring variables as private and public setters and public 
+ geeter methods
+ 
+ 
+ 
+
+class Test
+{
+  private int a; 
+  public void setA(int a)
+  {
+  this.a=a;
+  }
+  public int getA()
+  {
+  return a;
+  }
+  
+}
+
+example on encapsulation:
+```````````````````````````
+Student.java:
+````````````
+
+public class Student {
+	// private varaible
+	private int stid;
+	private String stname;
+
+	public int getStid() {
+		return stid;
+	}
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+	public String getStname() {
+		return stname;
+	}
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+}
+
+Test.java:
+```````````
+
+public class Test {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		Student obj = new Student();
+		
+		//write the data to student class properties by invoking setter methdods
+		
+		obj.setStid(100);
+		obj.setStname("rama");
+		
+		System.out.println("student id: " + obj.getStid());
+		System.out.println("student name: " + obj.getStname());
+	}
+
+}
+
+inheritance
+polymorphism
+encapsulation
+
+
+
+abstraction:
+````````````
+ it is the process of retrieving the essential details or required details
+ by ignoring implementation details.
+ 
+ 
+ we are just focusing on what object will do 
+ we are not focussing on how the object will do?
+ 
+ 
+ whatsapp message from your mobile number to my mobile?
+ 
+   ->message is delivered or not?
+   
+    
+using two concepts we can implement the abstraction
+  
+    ->abstract class
+	->interfaces
+	
+abstract class:
+```````````````
+	
+abstract class is one which contains atleast one abstract method
+
+abstract method:
+````````````````
+which contins only method name there is no logic.
+
+means only metho declaration.
+
+to make or to represnt a normal method as abstract method we have 
+to use abstract keyword before method declaration.
+
+example:
+````````
+  abstract void sum();
+  abstract void sub();
+  
+  
+when should we go gor declaring a method as abstract method?
+
+  if a method or property is common for multiple classes then it is
+  better to declare that method as abstract method.
+  
+  example:
+  `````````
+   public abstract float getRateOfInterest()
+	
+	
+example:
+````````
+   abstract class Bank
+   {
+    public abstract float getRateOfInterest();
+   }
+   
+note:
+`````
+to represent a class as an abstract class , we have to use abstract keyword
+before the class declaration like method declaration.
+
+
+class Parent{
+}
+
+class Child extends Parent{
+
+}
+
+  Parent obj = new Parent();
+  Child obj = new Child();
+  Parent obj = new Child();//valid -> runtime polymorphism
+  
+  Child obj = new Parent();//invalid -> not possible
+  
+  
+  
+ Can we create the object for an abstract class or not?
+ 
+  answer: no
+  
+  static methods can't be overriden
+  
+  
+based on the reference variable if method bidning will happen we call 
+it as compile time polymorphism/static binding
+
+based on the object type ,if method binding will happen we call it as
+runtime polymorphism/dynamic binding.
+
+
+Parent.java:
+````````````
+
+public class Parent {
+
+	//static method
+	public static void display()
+	{
+		System.out.println("iam static method from parent class");
+	}
+}
+
+
+Child.java:
+````````````
+
+public class Child extends Parent{
+	
+	//overriding the method
+	
+	public static void display()
+	{
+		System.out.println("iam static method from child class");
+	}
+	public static void main(String[] args) {
+		//object declaration
+		Parent obj;
+		//object referencing
+		obj= new Child();
+		
+		
+		obj.display();
+		
+		
+	}
+
+}
+
+
+example on abstract class:
+``````````````````````````
+//abstract class
+public abstract  class Bank {
+
+	 public abstract double getRateOfInterest();
+	 
+	
+}
+
+
+CityBank.java:
+`````````````
+
+public class CityBank extends Bank {
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 7.8;
+	}
+
+}
+
+Icici.java:
+```````````
+
+public class Icici extends Bank {
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 6.6;
+	}
+
+}
+
+Test.java:
+```````````
+
+public class Test {
+	
+	
+	public static void main(String[] args) {
+		
+		//runtime polymorphism
+		
+		//object creation
+	      Bank obj=new CityBank();
+	  
+	      double interest = obj.getRateOfInterest();
+		
+		  System.out.println("citybank rate of interest is : " + interest);
+	}
+
+}
+
+-abstract class
+-interface
+
+interface:
+```````````
+interface is a collection of 
+
+
+   -constants(public static final)
+   -only abstract methods
+   
+  note:
+  
+  by default interfaece variables are public static final 
+  and methods are public abstract.
+  
+ ex: using interface keyword we can define interface
+ 
+   ex:
+   
+     interface i1
+	 {
+	  int a=100;
+      void m1();
+     }
+	 
+  
+ note:
+ extends keyword must be used for extending from class to class
+ and interface to interface.
+ 
+ note:
+ ````
+  to bring or to take the properties from interface to class
+  we should use "implements".
+  
+  why interface to class:
+  
+   to provide the logic or to implement the method
+   
+  we are here to make undefined things as defined thing not for
+  making defined things as undefined things.
+  
+  
+  
+ note:
+ `````
+ while we are overriding any method from parent to child, scope of 
+ the access modifier same or higher visibility we can't decrease 
+ the visibility.
+ 
+ Bank.java:
+ ```````````
+ 
+public interface Bank {
+
+	  
+	double getRateOfInterest();
+}
+
+
+Icici.java:
+````````````
+
+
+public class Icici implements Bank {
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 5.6;
+	}
+
+}
+
+CityBank.java:
+``````````````
+
+public class CityBank implements Bank {
+
+	@Override
+	public double getRateOfInterest() {
+		// TODO Auto-generated method stub
+		return 8.9;
+	}
+
+}
+
+
+Test.java:
+``````````
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Bank obj = new CityBank();
+	System.out.println("city bank rate of interest is : " + 
+		obj.getRateOfInterest());
+	}
+
+}
+
+
+
+
+package:
+````````
+
+collection of classes,interfaces and sub pacakges
+
+types of packages:
+```````````````````
+ we have two types of packages 
+ 
+   -pre-defined packages-sunmicrosystem-predefined classes,interfaces...
+   -user-defined pacakges-programmers-our own classes,interfaces....
+   
+   
+   1995
+    jamesgosling
+	
+	  3 editions
+	     jse-core java
+		 jee-advanced java
+		 jme-mobile applications/micro applications
+		 
+		 
+		 
+jse packages always starts with java.lang
+ 
+   java.lang
+   java.awt
+   java.sql
+   java.util
+   java.io
+   java.applet
+   java.lang.reflect
+   java.beans
+   java.awt.event
+   java.math
+   ....
+  refernceurl: https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/package-summary.html
+
+if you observe all the above packages java.lang is the default 
+imported package 
+
+why package:
+````````````
+-reusability
+-to avoid naming conflict
+
+
+naming convention to define pacakges:
+``````````````````````````````````````
+<company reverse domain url>.<projectname>.<modulename>;
+
+example:
+````````
+com.capg.banking.withdrawl
+
+how to import the package:
+``````````````````````````
+import <packagename>.<classname> or<interfacename>
+
+import <packagename>.*
+
+* represents each and every property of package.
+
+
+Test1.java:
+````````````
+package com.capg.jse.packages;
+//business logic class
+public class Test1 {
+	
+	//business logic method
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+}
+
+Test2.java:
+```````````
+package com.capg.jse.pacakges2;
+import com.capg.jse.packages.Test1;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(4, 5);
+		
+		
+	}
+
+}
+
+
+conclusion:
+```````````
+by importing the main package only we are allowed to access main 
+packages classes,interfaces only
+
+we are not allowed to access sub packages properties(classes & interfaces)
+
+Test1.java:
+````````````
+package com.capg.jse.packages;
+//business logic class
+public class Test1 {
+	
+	//business logic method
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+}
+
+
+Test3.java:
+```````````
+package com.capg.jse.packages.sub;
+
+public class Test3 {
+
+	public void display()
+	{
+		System.out.println("iam display from sub package");
+	}
+}
+
+Test2.java:
+````````````
+package com.capg.jse.pacakges2;
+import com.capg.jse.packages.Test1;
+import com.capg.jse.packages.sub.Test3;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(4, 5);
+		
+		Test3 obj1=new Test3();
+		
+		obj1.display();
+	}
+
+}
+
+
+note:
+``````
+while we are defining our own package package names are always
+user defined.
+
+Access modifiers:
+``````````````````
+
+These access modfiiers says scope of the visibility over the pacakges
+we do have following four access modifiers.
+
+
+private
+default(is not a keyword)
+protected
+public
+
+private:
+`````````
+the access level of private access modifier is only with in the class
+it can't be accessed outside the class.
+
+example:
+`````````
+package com.capg.jse.packages;
+//business logic class
+public class Test1 {
+	
+	//business logic method
+    private void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+	public static void main(String[] args)
+	{
+		Test1 obj = new Test1();
+		obj.sum(0, 3);
+	}
+}
+
+
+default:
+```````
+the access level of a default access modfier is with in the package
+it cannot be accessed from outside the pacakge.
+
+Test1.java:
+````````````
+package com.capg.jse.packages;
+//business logic class
+public class Test1 {
+	
+	//business logic method
+    void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+	
+}
+
+Test2.java:
+```````````
+package com.capg.jse.packages;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(2, 3);
+	}
+
+}
+
+Test2.java:
+````````````
+package com.capg.jse.pacakges2;
+
+import com.capg.jse.packages.Test1;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+		Test1 obj = new Test1();
+		obj.sum(2,3);//error
+	}
+
+}
+
+protected:
+```````````
+the access level of protected access modifier is with in the package
+and outside the package through the child class.
+
+if you do not make the child class, it cannot be accessed from outside
+the package.
+
+Test2.java:
+````````````
+package com.capg.jse.pacakges2;
+
+import com.capg.jse.packages.Test1;
+
+//other package child class
+public class Test2 extends Test1 {
+	
+	public static void main(String[] args) {
+		
+		
+		Test2 obj = new Test2();
+		obj.sum(2,3);
+	}
+
+}
+
+
+assignment:
+
+try for public
+
+
+
+day-3(dec 7th,2021)
+````````````````````
+ Exception handling:
+ `````````````````````
+ 
+ exception: 
+ 
+  two types of errors
+  
+     1.compile time errors
+	 2.runtime errors->exceptions
+  
+  exception is a runtime error which we are getting while we are
+  executing the java program.
+  
+  why exceptions will occur?
+  ``````````````````````````
+   jvm can process only valid data, whenever we pass invalid data
+   jvm won't process inreturn exceptions occurs.
+   
+   
+   what will happen when excepton occurs?
+   ```````````````````````````````````````
+    
+	  1.program terminated abnormally
+	  2.user will get system error messages which are not understandable
+	    by end users.
+		
+		
+  
+  
+  1000 lines of code
+  ...
+  ..
+  ... int x = 100/0 -> exception 
+  ...
+  ...
+  
+  java.lang.ArithmeticException ....
+  
+     ->convert this into user friendly messages 
+	 don't enter zero as denominator
+	 
+  
+  rest of the code won't be executed.
+  simply the entire will become wasted.
+  
+atm machine
+
+  ->3000
+
+1000rs
+
+   insufficient funds...  
+  
+ 
+we have to handle the exceptions
+
+benefits / advantages we will get:
+
+  1.we can maintain smooth execution of the program
+  2.we can get user friendly messsages instead of system error messages
+    which are understandable by end users.
+	
+	
+how can we handle the exceptions?
+`````````````````````````````````
+ in java, we have 5 keywords using these we can handle the exceptions
+ 
+  1.try
+  2.catch
+  3.finally
+  4.throws
+  5.throw
+
+  all above are java reserved keywords.
+  
+  
+try:
+````
+ try block is used to keep problematic statements which causes 
+ problems at runtime.
+ 
+ 
+ syntax:
+ 
+                 try
+				 {
+				   //problematic statements
+				 }
+				 
+example:
+
+                 try
+				 {
+				   int x = 100/0;
+				 }
+				 
+ 
+catch:
+```````
+  catch block is used to catch the exception and provides user friendly
+  messages.
+  
+ syntax:
+ ```````
+                  catch(ArithmeticException ae)
+				  {
+				  System.out.println("don't enter zero as a denominator");
+				  }
+                  ...
+				  ...
+				  ...
+				  
+ 
+byte   ->Byte,Short,Integer,Long,Character,
+short
+int               parseByte(),parseInt(),parseLong()
+long
+ 
+ 
+example on command line arguments:
+``````````````````````````````````
+package com.capg.jse.exceptions;
+
+public class Test1 {
+	
+	//command line arguments
+	public static void main(String[] args) {
+		
+		int x= Integer.parseInt(args[0]);
+		int y = Integer.parseInt(args[1]);
+		
+		System.out.println(x+y);
+	}
+
+}
+
+
+without handling the exception:
+```````````````````````````````
+package com.capg.jse.exceptions;
+
+public class Test1 {
+	
+	//command line arguments
+	public static void main(String[] args) {
+		
+		int x= Integer.parseInt(args[0]);
+		int y = Integer.parseInt(args[1]);
+		//division of two numbers
+		int z =x/y;
+		
+		System.out.println("division of two numbers is: " + z);
+		
+		
+	}
+
+}
+
+
+with handling the exceptions using try and catch blocks:
+````````````````````````````````````````````````````````
+package com.capg.jse.exceptions;
+
+public class Test1 {
+	
+	//command line arguments
+	public static void main(String[] args) {
+		
+		try
+		{
+		int x= Integer.parseInt(args[0]);
+		int y = Integer.parseInt(args[1]);
+		//division of two numbers
+		int z =x/y;
+		
+		System.out.println("division of two numbers is: " + z);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as a denominator");
+		}
+		
+		catch(NumberFormatException nfe)
+		{
+			System.out.println("please pass only numerics");
+		}
+		System.out.println("Rest code will executed");
+		
+	}
+
+}
+
+
+types of exceptions:
+`````````````````````
+ ->pre-defined exceptions
+   ->user defined exceptions
+ 
+ pre-defined exceptions
+
+    ->asynchronous exceptions -> these exceptions causes because of 
+	  hardware failures.
+	  
+	  OutOfMemory,VirtualMemory.....
+	  
+	  
+    ->synchronous exceptions -> progamatical errors (logical errors)
+	
+	   ->checked exceptions
+	   ->unchecked exceptions
+	   
+	   
+checked exceptions
+
+  checked exceptions are the exceptions which are checked by 
+  java compiler 
+  
+     FileNotFoundException
+	 IOException
+	 SQLException
+	 ClassNotFoundException....
+
+
+unchecked exceptions are checked by jvm.
+
+     ArithmeticException
+	 NumberFormatException
+	 ArrayIndexOutOfBoundsException
+	 NullPointerException..
+	 .....
+	 
+	 
+
+  
+   (ssc)one examination 
+     ->Mother is actually checking at compile time
+	 
+	 PenNotFoundException
+	 HallTicketNotFoundException
+	 
+	unfortunately in that examination -> one bomb 
+	
+	 BombBlastException -> runtime
+	 
+	 wrong input ->
+ java.lang.Object
+ |
+ java.lang.Throwable
+ |
+ asynchronous exceptions               synchronous exceptions
+ 
+ java.lang.Error                         java.lang.Exception
+ 
+                                             synchronous unchecked execptions
+											 
+											   java.lang.RuntimeException
+											   
+											   
+											   
+
+ class ArithmeticException extends RuntimeException extends Exception extends
+ Throwable extends Object
+ {
+ }
+ 
+ 
+try
+catch
+
+note:
+`````
+for a single try block, we can define as many as we want catch blocks based
+on requirement.
+
+
+note:
+`````
+whenever exception occurs in try block, control goes to appropriate near by
+catch block and then control moving forward to execute the down statements.
+
+
+
+finally:
+````````
+finally block gets execute everytime either exception occurs or not.
+in both cases finally block logic gets executed.
+
+such kind of logic we have to keep inside the finally block.
+
+ex:
+```
+  closing the file logic,
+  closing the db connection logic.
+  
+usage:
+``````
+to release the resources.
+
+example:
+`````````
+package com.capg.jse.exceptions;
+
+public class Test1 {
+	
+	//command line arguments
+	public static void main(String[] args) {
+		
+		try
+		{
+		int x= Integer.parseInt(args[0]);
+		int y = Integer.parseInt(args[1]);
+		//division of two numbers
+		int z =x/y;
+		
+		System.out.println("division of two numbers is: " + z);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as a denominator");
+		}
+		
+		catch(NumberFormatException nfe)
+		{
+			System.out.println("please pass only numerics");
+		}
+		
+		finally
+		{
+			System.out.println("iam from finally block");
+		}
+		System.out.println("Rest code will executed");
+		
+	}
+
+}
+
+note:
+`````
+try with finally only is possible
+
+in between try and catch block, we are not allowed to write any statements
+otherwise we will get compile time error.
+
+shortcuts:
+``````````
+official url: https://dzone.com/articles/top-30-eclipse-keyboard-shortcuts-for-java-program-1
+
+
+ctrl+shift+o ->importing the pacakges
+ctrl+a -> ctrl+shift+/ -> is for comment
+ctrl+a --> ctrl+shift+\ -> is for uncomment
+ctrl+a --> ctrl+shift+f => proper code alignment
+ctrl+d -> deleting the line where your cursor is there
+
+
+
+
+note:
+`````
+the order of handling the exception is always from specific to general
+not from general to specific if we do like this we will get compile 
+time errors.
+
+
+example:
+```````
+package com.capg.jse.exceptions;
+
+public class Test1 {
+
+	// command line arguments
+	public static void main(String[] args) {
+
+		try {
+			int x = Integer.parseInt(args[0]);
+			int y = Integer.parseInt(args[1]);
+			// division of two numbers
+			int z = x / y;
+
+			System.out.println("division of two numbers is: " + z);
+		}
+
+	
+		catch (ArithmeticException ae) {
+			System.out.println("don't enter zero as a denominator");
+		}
+
+		catch (NumberFormatException nfe) {
+			System.out.println("please pass only numerics");
+		}
+
+		catch (RuntimeException re) {
+			System.out.println(re);
+		}
+
+		finally {
+			System.out.println("iam from finally block");
+		}
+
+		System.out.println("Rest code will executed");
+
+	}
+
+}
+
+
+
+throws:
+``````
+throws is a java reserved keyword for the purpose of giving the instructions
+to the called one to keep the calling one under try and catch block.
+
+
+   if i am dangerous person
+    if i hang one tag in my neck
+	every one will aware 
+   
+   how can i tag in my neck --> using throws keyword
+   
+   
+    ->taking precautions means -> keep the code under try and catch block
+	->not taking precautions means -> not keeping the code under try and 
+	                                  catch block
+									  
+									  control abnormally terminated,
+									  not able to maintin smooth execution
+									  
+									  
+Test2.java:
+```````````
+package com.capg.jse.exceptions;
+
+//called one
+public class Test2 {
+	
+	
+	public void division(int x, int y) throws ArithmeticException,NumberFormatException
+	{
+		int z= x/y;
+	}
+
+}
+
+Test3.java:
+```````````
+package com.capg.jse.exceptions;
+
+//caller one
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		
+		Test2 obj = new Test2();
+		try
+		{
+		int p= Integer.parseInt(args[0]);
+		int q  = Integer.parseInt(args[1]);
+	
+		   obj.division(p,q);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as a denominator");
+		}
+		catch(NumberFormatException nfe)
+		{
+			System.out.println("please pass only numerics");
+		}
+	}
+
+}
+
+
+throw:
+``````
+throw is used to throw an exception explicitly.
+
+exception got thrown by jvm automatically whenever it met some condition
+
+predefined exceptions are thrown by jvm 
+
+throw is a java reserved keyword which is used to throw our own 
+exception explicitly whenever our own condition met.
+
+syntax:
+```````
+    throw new <exceptionclass>();
+	
+	
+note:
+`````
+every exception is a class.
+
+ex:
+     throw new ArithmeticException();
+	 throw new NumberFormatException();
+	 throw new InvalidProductException();
+	 
+usually we are using this throw keyword to handle or to define 
+user defined or custom exceptions.
+
+
+  scenario:
+  
+    if product weight is > 100 --> product is valid
+	if product weight is <100 kg -->throw InvalidProductException()
+	
+Test4.java:
+````````````
+package com.capg.jse.exceptions;
+
+public class Test4 {
+	
+	public void checkProduct(int weight)
+	{
+		if(weight>100)
+		{
+			System.out.println("product is valid");
+		}
+		else
+		{
+			try
+			{
+			   throw new InvalidProductException();
+			}
+			catch(InvalidProductException ip)
+			{
+				System.out.println("product weight must be greater than 100kgs");
+			}
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Test4 obj = new Test4();
+		int weight = Integer.parseInt(args[0]);
+		
+		obj.checkProduct(weight);
+		
+	}
+
+}
+
+InvalidProductException.java:
+`````````````````````````````
+package com.capg.jse.exceptions;
+
+public class InvalidProductException extends Exception {
+
+}
+
+
+note:
+`````
+to make normal java class as an exception class, it has to extend from
+either RuntimeException or Exception or Throwable based on the type
+of exception.
+
+FileHandling in java/iostreams in java:
+``````````````````````````````````````````
+to store or to persist the data initially we used files concept.
+
+but now a days everyone is using... which concept we are using?
+
+to persist the data?
+
+  traditional approach ->using files
+  ->database
+  
+  
+ in java, we have one package is there 
+ 
+ java.io 
+ 
+   -> inside this package we do have some predefined classes,interfaces
+      which are used to perform input output operations on top of the files.
+	  
+	  
+	  input operation -> reading the data from the file
+	  
+	  output operation ->writing /saving/inserting the data into the file.
+	  
+	  
+	primary memory ->RAM
+	secondary memory
+	
+	files got saved in which memory?
+	 ->secondary memory
+	 
+	harddisk,pendrives,flopydisks....
+	
+java program got executed in which memory?
+
+   primary memory->ram
+   
+    jvm 
+   
+   read operation -> data will be transferred from secondary memory to 
+   primary memory
+   write operation -> data will be transferred from primary memory to 
+   secondary memory.
+   
+   
+   stream:
+   ````````
+    stream is a flow of data in betewen primary memory to secondary memory
+	viceversa.
+	
+	
+File is a pre-defined class available in java.io pacakge 
+
+file creation example:
+```````````````````````
+package com.capg.jse.iostreams;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Test1 {
+	
+	public static void main(String[] args) throws IOException{
+		
+		File f = new File("capg.txt");
+		f.createNewFile();
+		
+		System.out.println(f.exists());
+	}
+
+}
+
+
+note:
+`````
+on top of files, we can perform following two operations
+ 
+   -write operation
+   -read operation
+   
+   
+   
+  whenever we perform any write operation, after we invoke multiple 
+  write() at last we have to invoke flush() while we are writing the data.
+  
+ drawbacks of FileWriter:
+ ``````````````````````````
+ ->for line separation writing \n is not recommended and it is not gurarantee
+   to work in every machine
+ ->we are not allowed to store integer data since it got converted into 
+   corresponding equivalent unicode value.
+   
+   
+    ex:   fw.write(100) --> d
+
+example on FileWriter:
+`````````````````````````
+package com.capg.jse.iostreams;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		try
+		{
+		
+		FileWriter fw = new FileWriter("capg.txt");
+		//writing the data to the file 
+		fw.write("rama\n");
+		fw.write("krishna\n");
+		fw.write("capgemini\n");
+		fw.write(100);
+		
+		fw.flush();
+		
+		}
+		catch(IOException io)
+		{
+			System.out.println(io);
+		}
+		
+		System.out.println("data written successfully");
+	}
+
+}
+
+	
+BufferedWriter:
+``````````````
+package com.capg.jse.iostreams;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		try
+		{
+		FileWriter fw = new FileWriter("capg.txt");
+		BufferedWriter br = new BufferedWriter(fw);
+		
+		br.write("rama");
+		br.newLine();
+		br.write("krishna");
+		br.newLine();
+		br.write(100);
+		
+		
+		br.flush();
+		}
+		catch(IOException io)
+		{
+			System.out.println(io);
+		}
+		
+		System.out.println("data written successfully");
+	}
+
+}
+
+PrintWriter:
+`````````````
+PrintWriter is one of the pre-defined super class available in java.io 
+package for the purpose of writing the data into the file.
+
+it is very powerful, since it has lot of methods to write specific data
+with different types.
+
+
+note:
+`````
+for writing the data PrintWriter is highly recommended.
+
+example:
+`````````
+package com.capg.jse.iostreams;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		try
+		{
+		PrintWriter pw = new PrintWriter("capg.txt");
+		
+		pw.println("rama");
+		pw.println("yash");
+		pw.println("ranjitha");
+		pw.println("brundha");
+		pw.println(100);
+		pw.println(true);
+		pw.println(345.55);
+		
+		
+		pw.flush();
+		}
+		catch(IOException io)
+		{
+			System.out.println(io);
+		}
+		
+		
+		System.out.println("data written successfully");
+	}
+
+}
+
+note:
+````
+while we are writing the data, data will be transferred from 
+primary memory to secondary memory.
+
+
+read operation:
+```````````````
+to read the data from the file, in java.io we will use following two 
+classes
+
+  1.FileReader
+  2.BufferedReader
+  
+
+FileReader is one of the pre-defined class for the purpose of reading
+the data charcter by character.
+
+So that in between secondary memory to primary memory network traffic 
+will get increased.
+
+so that's why we wil go for next level class. i.e. BufferedReader
+and one more drawback this class is read() returns integer , so we have to 
+type cast from integer to charcter so that we can read the data.
+
+
+example:
+````````
+package com.capg.jse.iostreams;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Test5 {
+	
+	static FileReader fr;
+	public static void main(String[] args) {
+		
+		try
+		{
+		fr = new FileReader("capg.txt");
+		int x = fr.read();
+		
+		while(x!=-1)
+		{
+			System.out.print((char)x);
+			x=fr.read();
+			
+		}
+		
+		}
+		catch(IOException io)
+		{
+			System.out.println(io);
+		}
+		
+		finally
+		{
+			try {
+			fr.close();
+			}
+			catch(IOException ie)
+			{
+				System.out.println(ie);
+			}
+		}
+		
+		
+	}
+
+}
+
+
+example on BufferedReader:
+````````````````````````````
+package com.capg.jse.iostreams;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Test6 {
+	
+	public static void main(String[] args)throws Exception {
+		
+		//FileReader fr = new FileReader("capg.txt");
+		
+		BufferedReader br = new BufferedReader(new FileReader("capg.txt"));
+		
+		String data = br.readLine();
+		
+		while(data!=null)
+		{
+			System.out.println(data);
+			data=br.readLine();
+		}
+		
+		
+		
+	}
+
+}
+
+
+note:
+````
+BufferedReader is highly recommended to perform read operations because
+read operations will performed based on line by line, so that no.of 
+redad operations in between secondary memory to primary memory gets 
+reduced. so that performance of application gets improved.
+
+
+  File
+  FileWriter
+  BufferedWriter
+  PrintWriter
+  FileReader
+  BufferedReader
+  
+  
+ read(),write(),newLine(),createNewFile(),exists(),
+ readLine(),println()......
+ 
+ 
+Serialization and DeSerialization:
+```````````````````````````````````
+
+distributed application
+ 
+  -> transfer the data from one place to another place via network.
+  
+  -> our data is available in which form -> in the object form
+  
+  -> network will support this object type ?  no
+  
+  -> we have to convert this object type data to network supprted format
+  
+  -> are we able to transfer ? yes
+  
+  
+ serialization:
+ ``````````````
+ it is the process of converting/writing object type data to network supported 
+ format
+ 
+   
+      example:  birthday wish to your friendly with baloon 
+	    hyderabad    bangalore
+		
+		transfer this baloon with air or without air
+		
+  
+  to implement this serialization, we are going to use some predefined 
+  classes which are available in java.io package.
+  
+     ->ObjectOutputStream
+  
+               writeObject()
+			   
+example:
+````````
+package com.capg.jse.iostreams;
+
+import java.io.Serializable;
+
+public class Student implements Serializable{
+	
+	private int stid;
+	private String stname;
+	public int getStid() {
+		return stid;
+	}
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+	
+	public Student(){
+		
+	}
+
+}
+
+Test7.java(Serialization):
+``````````````````````````
+package com.capg.jse.iostreams;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Test7 {
+	
+	public static void main(String[] args) throws Exception{
+		
+		FileOutputStream fos = new FileOutputStream("infy.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		
+		Student obj = new Student();
+		obj.setStid(100);
+		obj.setStname("Rama");
+		
+		oos.writeObject(obj);
+		
+		
+		System.out.println("serialization done successfully");
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+DeSerialization:
+````````````````
+	
+	the process of reading the object data from netwok supported format 
+	files is known as deserialization.
+	
+	to achieve this, we will use following class
+	
+	
+	  ObjectInputStream
+	  
+	     readObject()
+		 
+		 
+Test8.java(DeSerialization):
+````````````````````````````
+package com.capg.jse.iostreams;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class Test8 {
+	
+	public static void main(String[] args) throws Exception{
+		
+		FileInputStream fis = new FileInputStream("infy.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		
+		Student stu = (Student)ois.readObject();
+		
+		System.out.println("student id: " + stu.getStid());
+		System.out.println("student name: " + stu.getStname());
+	}
+
+}
+
+
+note:
+``````
+if we want to serialize any java class object, that class must be implements
+from java.io.Serializable interface(which is also known as marker interface)
+
+marker interface:
+
+ marker interface is one which doesn't contains anythig just simply provides
+ some instructionis to jvm
+ 
+ 
+ 
+String class in java:
+``````````````````````
+String class is available in which package?
+
+  java.lang
+  
+ in entire application implemention the most frequently used object is
+ String  only.
+ 
+ 
+purpose:
+````````
+ to store any string type data.
+ 
+ 
+in how many ways we can create the String class object?
+
+
+          -two ways
+		  
+		   1.using string literal
+		   2.using new keyword
+		   
+ex:
+
+   1.String s1="rama";//valid
+   2.String s2 = new String("rama");//valid
+   
+  if both are valid, what is the difference?
+  
+  if we create the String object using literal , it got stored in 
+  string constant pool memory area.
+  
+  if we create the string object using new keyword, it got stored in 
+  heap memory.
+  
+  
+  scp doesn't allows duplicates
+  where as heap memory allows duplicates
+  
+     String s1="Rama";
+	 
+example:
+`````````
+package com.capg.jse.strings;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		
+		String s1="Rama";
+		String s2="Rama";
+		
+		System.out.println(s1==s2);
+		
+		String s3=new String("Rama");
+		String s4=new String("Rama");
+		
+		System.out.println(s3==s4);
+		
+		
+	}
+
+}
+
+
+== operator or reference operator:
+`````````````````````````````````
+if both the reference variables are pointing to same object then it 
+returns true otherwise it returns false.
+
+
+String is immutable:
+```````````````````
+once we create the String object, we can't modify that String object
+or we can't perform any operations on top of existing string object.
+
+example:
+````````
+package com.capg.jse.strings;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+		String s1="Rama";
+		s1.concat("krishna");
+		System.out.println(s1);
+		
+	}
+
+}
+
+
+to achieve mutable strings either we should go for StringBuffer or
+StringBuilder.
+
+example:
+````````
+package com.capg.jse.strings;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		
+		StringBuffer s1 = new StringBuffer("rama");
+		s1.append("krishna");
+		
+		System.out.println(s1);
+		
+	}
+
+}
+
+note:
+`````
+to create StringBuffer or StringBuilder objects only using new operator only
+it is possible with literals it is not possible like String objects.
+
+immutablity -> unmodifiable
+mutability -> we can modify
+
+how can we compare the String objects:
+``````````````````````````````````````
+->using == operator
+->using equals() or equalsIgnoreCase()
+->using compareTo() or compareToIgnoreCase()
+
+example on == and equals(), equalsIgnoreCase():
+```````````````````````````````````````````````
+package com.capg.jse.strings;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		String s1 = new String("rama");
+		String s2 = new String("rama");
+		String s3 = new String("Rama");
+		
+		
+		System.out.println(s1==s2);//false
+		
+		System.out.println(s1.equals(s2));
+		
+		System.out.println(s1.equalsIgnoreCase(s3));
+	}
+
+}
+
+
+assignment:
+```````````
+refer compareTo() method of String class.
+
+
+
+compareTo() or compareToIgnoreCase():
+``````````````````````````````````````
+
+		if the first string is less than second string
+		it return -ve
+				
+	    if the first string is greater than second string
+	    it returns +ve value
+	    
+	    if both the strings are equal then it returns 0
+		
+		
+example:
+`````````
+package com.capg.jse.strings;
+
+public class Test5 {
+	
+	public static void main(String[] args) {
+		
+		//finding the unicode value of a character
+		System.out.println("a unicode value is" + Integer.toHexString('a'));
+		System.out.println("b unicode value is" + Integer.toHexString('b'));
+		
+	    
+	    
+		System.out.println("a".compareTo("b"));//-1
+		System.out.println("b".compareTo("a"));//+1
+		System.out.println("a".compareTo("a"));//0
+		
+		String s1="rama";
+		String s2="krishna";
+		
+		System.out.println(s1.compareTo(s2));//+7
+		System.out.println(s2.compareTo(s1));//-7
+		System.out.println(s1.compareTo(s1));//0
+		
+		//assignment: check for compareToIgnoreCase()
+	}
+
+}
+
+
+example on some String class methods:
+``````````````````````````````````````
+package com.capg.jse.strings;
+
+public class Test6 {
+	
+	 public static void main(String[] args) {
+		
+		 
+		 String s1 = new String("rama");
+		 String s2 = new String("CAPG");
+		 
+		 System.out.println("uppercase string is: " + s1.toUpperCase());
+		 System.out.println("lowercase string is: " + s2.toLowerCase());
+		 System.out.println("lenght of the string is: " + s1.length());
+		 System.out.println("0th index character is: " + s1.charAt(0));
+		 System.out.println("sub string is: " + s1.substring(0,3));
+		 System.out.println("sub string is: " + s1.substring(1));
+		 System.out.println("concatination string is: " + s1.concat("capg"));
+		
+	}
+
+}
+
+
+
+Garbage collection:
+```````````````````
+In java, garbage means unrefernced objects.
+
+
+it is the process of reclaiming the runtime unused memory automatically.
+
+in otherwords , it is a way to destroy the unused objects.
+
+
+   free()
+   
+ but in java it is performed automatically, so provides better memory
+ management.
+ 
+ 
+ advantage of garbage collection:
+ ````````````````````````````````
+ ->it makes java memory efficient 
+ ->it is automatically done by garbage colletor(a part of jvm)
+
+
+how can an object be unreferenced:
+`````````````````````````````````
+ Student stu = new Student();
+ 
+ there are many ways
+ 
+   ->by nulling the reference
+   ->by assigning a refernce to another
+   ->by anonymous object etc.
+   
+ ->by nulling the reference:
+ ````````````````````````````
+   
+ Student stu = new Student();
+ stu=null;
+ 
+ 
+by assigning a reference to another:
+``````````````````````````````````````
+ Student st1 = new Student();
+ Student st2 = new Student();
+ 
+  st1=st2;
+  
+  //st2 object is unreferenced
+  
+by anonymous object/nameless object
+`````````````````````````````````````
+new Student();
+ 
+finalize() method:
+```````````````````
+it is invoked each time before the object is garbage collected.
+This method can be used to perform cleaup processing(destroying remianing
+objects)
+
+
+This method is defined in Object class as
+     protected void finalize();
+	 
+	 
+note:
+`````
+the garbage collector of jvm collects only those objects that are created
+by new keyword.
+
+so if you have created any object without new , you can use finalizee method
+to perform cleanup processing.
+
+
+gc():
+`````
+the gc() method is used to invoke the garbage collector to perform 
+cleanup processing.
+
+the gc() is found in System and Runtime classes.
+
+
+example:
+````````
+package com.capg.jse.gc;
+
+public class Test1 {
+	
+	//overriding finalize() of Object class 
+	public void finalize()
+	{
+		System.out.println("objet is garbage collected");
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test1 obj1 = new Test1();
+		Test1 obj2 = new Test1();
+		
+		obj1=null;
+		obj2=null;
+		
+		System.gc();
+		
+	}
+
+}
+
+
+note:
+`````
+neither finalization nor garbage collection is guaranteed.
+
+
+   
+toString()of String class:
+```````````````````````````
+ whenever we display any java class object, internally behind the scene
+ it will invoke toString() .
+ 
+ example on toString():
+ ``````````````````````
+ package com.capg.jse.strings;
+
+public class Test7 {
+	
+	private int stid;
+	private String stname;
+	
+	
+	public int getStid() {
+		return stid;
+	}
+
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+
+	public String getStname() {
+		return stname;
+	}
+
+	@Override
+	public String toString() {
+		return "Test7 [stid=" + stid + ", stname=" + stname + "]";
+	}
+
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+	
+	//override the toString() of Object class
+	
+	
+
+	public static void main(String[] args) {
+		
+		Test7 obj = new Test7();
+		obj.setStid(100);
+		obj.setStname("rama");
+		
+		System.out.println(obj);//com.capg.jse.strings.Test7@123a439b
+		System.out.println(obj.toString());//com.capg.jse.strings.Test7@123a439b
+		System.out.println(obj.getClass().getName());
+		
+		
+	}
+
+
+
+}
+
+note:
+````
+it is highly recommended to override toString() of Object class in our 
+subclasses based on our requirement.
+
+
+Arrays:
+```````
+  
+    if i want to store a value we require a varaible.
+	
+	if i want to store 100 values how many variables we require?
+	
+	 100 variables
+	 
+	if i want to store 1 crore values how many variables we require?
+	
+	 1crore variables.
+	 
+
+collection of similar / homogenious data  of same type.
+
+note:
+````
+using arrays, we can store multiple values of same type in a single variable.
+
+for this readability of the code gets improved.
+
+
+note:
+````
+array size is fixed in nature
+
+once you fixed the size, at runtime you can't increase or decrease 
+memory locations.
+
+note:
+````
+in arrays, while we are storing the data based on index values gets
+stored
+
+usually index of an array starts from 0
+
+if size is n , maximum index value is n-1
+
+if size is 7 , maximum index value is 6
+
+
+syntax of array variable declaration:
+````````````````````````````````````
+                   int[] x;//varariable declaratin
+				   
+				   x=new int[5];//5 memory locations created
+				   
+				   //assignment
+				   
+				   x[0]=100;
+				   x[1]=200;
+				   x[2]=300;
+				   x[3]=400;
+				   x[4]=500;
+				   
+				   
+example:
+`````````
+package com.capg.jse.arrays;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		//array variable declaration
+		int x[];
+		x=new int[3];
+		
+		//assigning values to array variable using index
+		
+		x[0]=100;
+		x[1]=200;
+		x[2]=300;
+		
+		//display the array values
+		
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+		System.out.println(x[2]);
+		
+		
+		
+	}
+
+}
+
+
+improvement of first program:
+``````````````````````````````
+package com.capg.jse.arrays;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		//array variable declaration cum intialization
+		int x[]= {100,200,300};
+		
+		System.out.println(x.length);
+		
+		//for loop to display 
+		
+		for(int i=0;i<x.length;i++)
+		{
+			System.out.println(x[i]);
+		}
+		
+		
+		
+	}
+
+}
+
+note:
+`````
+on top of array variables or collection varaibles, we can apply foreach 
+loop or enchanced for loop this is advanced level of for loop.
+
+this got introudced in java 1.5 version 
+				   
+
+syntax:
+
+   for(datatypename  temporaryvaraiblename: actualvaraiblename)
+   {
+     System.out.println(temporaryvaraiblename);
+   }
+
+example:
+````````
+package com.capg.jse.arrays;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		//array variable declaration cum intialization
+		int x[]= {100,200,300};
+		
+		System.out.println(x.length);
+		
+		//foreach loop or enhanced for loop
+		
+		for(int y:x)
+		{
+			System.out.println(y);
+		}
+		
+	}
+
+}
+
+usecase using 2 dimensional array:
+```````````````````````````````````
+
+ 1 2
+ 3 4 
+ 
+ 
+example:
+````````
+package com.capg.jse.arrays;
+
+public class Test2 {
+	
+	
+	public static void main(String[] args) {
+		int[][] arr = {{1,2},{3,4}};
+		
+		for(int i=0;i<2;i++) {
+			
+			 for(int j=0;j<2;j++)
+			 {
+				 System.out.print(arr[i][j] + " ");
+			 }
+			 System.out.println();
+			
+		}
+
+	
+	}
+
+}
+
+assignment:
+```````````
+123
+456
+789 
+
+using arrays
+assignment:
+````````````
+refer equals() and hashCode() of Object class.
+
+
+collection framework:
+`````````````````````
+arrays size is fixed 
+but collection size is growable (you can increase or decrease)
+memory will not be wasted in case cfw.
+
+
+  collecton framework is the standardized mechanism of grouping 
+  similar objects and dissimilar objects as a single entity 
+  that single entity is known as collection object.
+  
+  
+  arrays:
+  
+    ->size is fixed
+	->not following standard datastructure
+	->doesnot contains any readymade methods
+	->it allows only homogenious data
+	
+	
+to work with collections, for sure as a java programmer, we have to use
+some predefined interfaces and classes which are available in java.util
+package.
+
+
+note:
+`````
+we should import java.util package while we are working on collections 
+since this package contains respective classes and interfaces. 
+
+->collection f/w can be divided into two types
+
+  1.1 dimension cfw
+  2.2 dimension cfw-(key,value)
+   
+1 dimension cfw:
+`````````````````
+  -> we are organizing the data in the form of either row and column
+
+  
+ pre-defined interfaces:
+ ```````````````````````
+                      1.Collection
+					 
+   2.List              3.Set                  4.Queue
+                      
+                                               
+                      5.SortedSet
+   
+   
+	
+
+Collection:
+`````````````
+Collection reprsents group of objects known as it's elements, and it is
+the root interface available in java.util package
+
+note: for this interface there is no direct implementation class.
+
+but this interface some fundamental method to perform some fundamental 
+operations like adding the object,removing, clear , checking the objects....
+
+
+all these methods we can use from sub interfaces also.
+
+List:
+`````
+List is the sub interface of Collection
+
+hierarchy:
+   
+    interface List extends Collection
+	{
+	}
+	
+when should we go for List interface:
+``````````````````````````````````````
+1.it allows homogenious and heterogenious objects
+2.duplicate objects are allowed
+3.insertion order is preserved
+4.null insertion is possible.
+
+for the List interface, how many implemented classes we have
+ 
+   ArrayList
+   LInkedList
+      older versions
+   Vector
+   Stack
+   
+   note: collection allows only objet type data
+   it won't allows primitve type data.
+   
+   
+example on ArrayList:
+`````````````````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		ArrayList al = new ArrayList();
+		
+		System.out.println("before adding: " + al);//[]
+	    al.add(new Integer(100));
+	    al.add(new String("rama"));
+	    al.add(new Boolean(true));
+	    al.add(new Double(4.5));
+	    al.add(null);
+	    al.add(new Integer(100));
+	    
+	    System.out.println("after adding: " + al);
+		
+	}
+}
+
+assignment: work on LinkedList find out the difference betewen 
+ArrayList and LinkedList
+
+
+Set:
+````
+Set is also one pre-defined interface available in java.util package
+
+properties:
+```````````
+1.it allows both homogenious and heterogenious
+2.it doesn't allows duplicates
+3.insertion order is not preserved we can't predict the order
+4.null insertion is possible but only for one time
+
+  ->HashSet
+  ->LinkedHashSet
+  
+  
+class HashSet implements Set extends Collection
+{
+}
+
+note:
+`````
+autoboxing is the process of converting primitive type data to corresponding
+object type data
+
+autounboxing is the process of converting object type data to corresponding
+primitive type data.
+
+this feature available from jdk.1.5 version onwards.
+
+
+example :
+````````
+package com.capg.jse.cfw;
+
+import java.util.HashSet;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+		HashSet hs = new HashSet();
+		
+		hs.add(100); 
+		hs.add(true);
+		hs.add(12.3);
+		hs.add('a');
+		hs.add("rama");	
+		hs.add(null);
+		hs.add(100);
+		
+		System.out.println(hs);
+		
+		
+	}
+
+}
+
+
+assignment: work on LinkedHashSet and find out the difference between
+HashSet and LinkedHashSet
+
+SortedSet:
+```````````
+SortedSet is also an interface available in java.util package 
+
+hierarchy:
+
+   interface SortedSet extends Set extends Collection
+   {
+   }
+
+
+TreeSet is the implementation class.
+
+ class TreeSet implements SortedSet extends Set extends Collection
+ {
+ }
+ 
+ 
+properties:
+``````````
+ 1.it doesn't allows both homogenious and heterogenious elemeents it only 
+   allows homogenious data.
+   
+ 2.insertion order is sorted either based on ascending or descending
+ 
+ 3.defaulting sorting order is ascending
+ 
+ 4.it doesn't allows duplicates
+ 
+ 5.null insertion is not possible 
+ 
+ note: if we try to add heterogenious data to SortedSet , it gives you runtime
+ error saying that java.lang.ClassCastException
+ 
+ 
+ note: if we try to add null values to the SortedSet, it gives you runtime
+ error saying that java.lang.NullPointerException
+ 
+ 
+example:
+````````
+package com.capg.jse.cfw;
+
+import java.util.TreeSet;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		
+		TreeSet ts = new TreeSet();
+		
+		ts.add(100);
+		ts.add(200);
+		ts.add(67);
+		ts.add(12);
+		ts.add(1);
+		ts.add(678);
+		ts.add(100);
+		
+		
+		System.out.println(ts);
+	}
+
+}
+
+
+assignment:
+```````````
+i want descending order from above program
+
+work on Queue interface and do one program
+
+
+
+
+special methods on SorteSet interface;
+``````````````````````````````````````
+example:
+````````
+package com.capg.jse.cfw;
+
+import java.util.TreeSet;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		
+		TreeSet ts = new TreeSet();
+		
+		ts.add(100);
+		ts.add(200);
+		ts.add(67);
+		ts.add(72);
+		ts.add(89);
+		ts.add(12);
+		ts.add(1);
+		ts.add(678);
+		ts.add(100);
+		
+		System.out.println(ts.headSet(100));
+		System.out.println(ts.tailSet(100));
+		System.out.println(ts.first());
+		System.out.println(ts.last());
+		System.out.println(ts.subSet(67, 100));
+		
+	}
+
+}
+
+
+two dimensional collection framework:
+`````````````````````````````````````
+if we want to organize the data in the form of (key,value) pair, then 
+we should go for 2dcfw.
+
+for this also sun mmicrosystem people provided some predefined interfaces
+
+interfaces:
+```````````
+1.java.util.Map
+2.java.util.Map.Entry(inner interface of Map)
+3.java.util.SortedMap
+4.java.util.NavigableMap
+
+
+implementation classes for Map:
+`````````````````````````````````
+1.HashTable
+2.HashMap
+3.LinkedHashMap
+
+
+implementation class for NavigableMap:
+``````````````````````````````````````
+4.TreeMap
+
+
+where key is one object and value is another object.
+
+key are always unique, it doesn't allows duplicates
+value can be duplicate
+
+
+Map interface:
+``````````````
+note:
+
+Collection is the root interface for 1 dcfw
+
+there is no relation in between Map and Collection
+
+HashMap:
+````````
+-HashMap allows both homogenious and heterogenious data.
+-insertion order is not preserved
+-duplicate keys are not allowed,but values can 
+-null insertion is possible but only for one time since duplicates
+ are not allowed.
+ 
+ 
+example:
+````````
+package com.capg.jse.cfw;
+
+import java.util.HashMap;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		HashMap hm = new HashMap();
+		
+		hm.put(100, "rama");
+		hm.put(200, "brunda");
+		hm.put(300, "taslim");
+		hm.put(400, "yash");
+		
+		hm.put("ranjitha", 500);
+		hm.put(100, "rk");
+		hm.put(null, null);
+		
+	System.out.println(hm.get(200));
+	System.out.println(hm.containsKey(700));
+	System.out.println(hm.size());
+	System.out.println(hm.remove(400));
+	System.out.println(hm.size());
+	System.out.println(hm.isEmpty());
+	hm.clear();
+	System.out.println(hm.isEmpty());
+	System.out.println(hm.size());
+		
+		
+		System.out.println(hm);
+		
+	}
+
+}
+
+
+assignment: work on HashTable and find out the difference between
+HashMap and LinkedHashMap
+
+
+SortedMap:
+``````````
+Map
+|
+SortedMap is the sub interface of Map 
+|
+NavigableMap is the sub interface of SortedMap
+ 
+  ->TreeMap is the implementation class
+  
+1.TreeMap doesn't allows both homogenious and heterogenious elements
+
+note:
+
+if we try to add heterogenious elements to TreeMap , we will get runtime
+error saying that java.lang.ClassCastException
+
+
+2.insertion order is sorted out (default sorting order is ascending) 
+  we can predict the order like TreeSet
+ 
+3.we can't insert null for key objects but we can insert null for value 
+  object since the order is getting sorted out based on key objects.
+
+4.duplicate keys are not allowed where as values can be duplicated.
+
+assignment:
+```````````
+check on some special methods of TreeMap like TreeSet 
+(headMap,tailMap,subMap()....)
+  
+  
+example:
+````````
+package com.capg.jse.cfw;
+
+import java.util.TreeMap;
+
+public class Test5 {
+	public static void main(String[] args) {
+		
+		
+		TreeMap tm = new TreeMap();
+		
+		tm.put(100, "rama");
+		tm.put(200, "taslim");
+		tm.put(300, "priyanka");
+		tm.put(400, "anushree");
+		tm.put(6, "ayesha");
+		//invalid tm.put("dipanwita", 500);
+		tm.put(67, null);
+		
+		//tm.put(null, null);
+		
+		System.out.println(tm);
+		
+		
+		
+	}
+
+}
+
+
+
+cursors in java:
+````````````````
+  ->Enumeration
+  
+  ->Iterator
+  ->ListIterator
+  
+  
+cursor:-  it is pointing to something
+
+ 
+Iterator:
+``````````
+we can't create the object for Iterator since it is an interface, so
+that's why every collection class provides one pre-defined method
+iterator() which returns Iterator object.
+
+
+example on Iterator interface:
+``````````````````````````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+	
+	ArrayList al = new ArrayList();
+	
+	for(int i=1;i<=10;i++)
+	{
+		al.add(i);
+	}
+	
+	Iterator iterator = al.iterator();
+	
+	while(iterator.hasNext())
+	{
+		//type casting from Object type to Integer
+		Integer i = (Integer)iterator.next();
+		if(i%2!=0)
+		{
+			System.out.println(i);
+		}
+		else
+		{
+			iterator.remove();
+		}
+	}
+	
+	
+	System.out.println(al);//[1,3,5,7,9]
+	}
+}
+
+using foreach() loop displaying collection elements:
+`````````````````````````````````````````````````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test7 {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList al = new ArrayList();
+		
+		for(int i=1;i<=10;i++)
+		{
+			al.add(i);
+		}
+		
+				//foreach loop
+		
+		for(Object obj:al)
+		{
+			//type casting 
+			 Integer x = (Integer)obj;
+			 if(x%2==0)
+			 {
+				 System.out.println(x);
+			 }
+		}
+		
+}
+}
+
+
+
+note:
+``````
+since Iterator is unidirectional cursor only we are allowed to access or
+retrieve the elements in forward direction.it is not possible to retrieve
+in backward direction.
+
+if we really require this backward direction then we should go for
+ListIterator.
+
+
+note:
+`````
+ListIterator , this can be applicable only on top of List interface implementation
+classes.
+
+example on ListIterator:
+````````````````````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class Test8 {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList al = new ArrayList();
+		
+		for(int i=1;i<=10;i++)
+		{
+			al.add(i);
+		}
+		
+		ListIterator ltr = al.listIterator();
+		
+		System.out.println("retrieving the elements in forward direction");
+		
+		while(ltr.hasNext())
+		{
+			System.out.println(ltr.next());
+		}
+		
+		System.out.println("retrieving the elements in backward direction");
+		
+		while(ltr.hasPrevious())
+		{
+			System.out.println(ltr.previous());
+		}
+	
+}
+}
+
+
+day-6th:
+`````````
+
+Generics in Collection:
+```````````````````````
+
+ while we are creating any collection object we can specify the 
+ datatype.
+ 
+ that time collection allows only the specified data.
+
+if we know inadvance, i am going to store only specific type of data
+then it is highly recommended to go for defining the collection with
+generic syntax.
+
+advantages:
+````````````
+1.type casting is not required
+2.compile time errors are far better than runtime errors.
+
+syntax:
+`````````
+anycollectionclassname<datatype> <objectname> = new <collectionclassname>();
+
+example:
+````````
+HashSet<Integer> hs = new HashSet();
+
+example:
+`````````
+package com.capg.jse.cfw;
+
+import java.util.HashSet;
+
+public class Test9 {
+	
+	
+	public static void main(String[] args) {
+		
+		HashSet<Integer> hs = new HashSet();
+		
+		for(int i=1;i<=10;i++)
+		{
+			hs.add(i);
+		}
+		
+		for(Integer i:hs)
+		{
+			if(i%2==0)
+			{
+				System.out.println(i);
+			}
+		}
+		
+		
+	}
+
+}
+
+
+requirement:
+````````````
+adding user defined data to any collection class
+
+usecase:
+````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+
+public class Test10 {
+	
+	
+	public static void main(String[] args) {
+		
+		Student st1 = new Student(100,"rama");
+		Student st2=new Student(101,"dipanwita");
+		Student st3 = new Student(102,"ranjitha");
+		Student st4 = new Student(103,"rajini");
+		
+		
+		ArrayList<Student> al = new ArrayList<Student>();
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		al.add(st4);
+		
+		//displaying only studentnames
+		for(Student st:al)
+		{
+			if(st.getStname().startsWith("r"))
+			{
+				System.out.println(st.getStname());
+			}
+		}
+	
+	}
+
+}
+
+
+requirement:
+```````````
+Product is the user defined object
+
+  productid
+  productname
+  productprice
+  
+  
+    display the products based on product price 
+	display the products based on product name 
+	  both ascending and descending order
+	  
+	  
+Comparable interface:
+`````````````````````
+Comparable interface available in java.lang package
+
+This is used to order the objects of the user defined class.
+
+It contains only one method named compareTo(Object)
+
+It provides single sorting sequence only.
+
+note:
+`````
+if the current object is greater than the specified object -> positive integer
+if the current object is less than the specified object -> negative integer
+if both the objects are equal -> it returns 0
+
+Comparable interface example:
+````````````````````````````
+package com.capg.jse.cfw;
+
+public class Student implements Comparable<Student> {
+
+	private int stid;
+	private String stname;
+
+	public int getStid() {
+		return stid;
+	}
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+	public String getStname() {
+		return stname;
+	}
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+
+	public Student() {
+		super();
+	}
+
+	public String toString() {
+		return stid + " " + stname;
+	}
+
+	@Override
+	public int compareTo(Student st) {
+		if (stid == st.stid)
+			return 0;
+		else if (stid > st.stid)
+			return -1;
+		else
+			return 1;
+	}
+
+}
+
+Test11.java:
+`````````````
+
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.TreeSet;
+
+public class Test11 {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Student> al = new ArrayList<Student>();
+		al.add(new Student(300,"bindhu"));
+	
+		al.add(new Student(100,"ram"));
+		
+		al.add(new Student(200,"tasleem"));	
+		
+		Collections.sort(al);
+		
+		
+		for(Student st:al)
+		{
+			System.out.println(st.getStid() + " " + st.getStname());
+		}
+	}
+
+}
+
+Comparator:
+````````````
+Comparator is the pre-defined interface available in java.util pacakge
+and it contains compare(Object o1, Object o2) 
+
+Example:
+````````
+package com.capg.jse.cfw;
+
+
+
+public class Student {
+
+	private int stid;
+	private String stname;
+
+	public int getStid() {
+		return stid;
+	}
+
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+
+	public String getStname() {
+		return stname;
+	}
+
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+
+	public Student() {
+		super();
+	}
+
+	public String toString() {
+		return stid + " " + stname;
+	}
+
+}
+
+
+StudentIdComparator.java:
+``````````````````````````
+package com.capg.jse.cfw;
+
+import java.util.Comparator;
+
+public class StudentIdComparator implements Comparator<Student> {
+
+	
+	@Override
+	public int compare(Student o1, Student o2) {
+		if(o1.getStid()==o2.getStid())
+		return 0;
+		else if(o1.getStid()>o2.getStid()) 
+			return 98;
+		else
+			return -98;
+		
+	}
+
+}
+
+StudentNameComparator.java:
+```````````````````````````
+package com.capg.jse.cfw;
+
+import java.util.Comparator;
+
+public class StudentNameComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+	
+		 return -o1.getStname().compareTo(o2.getStname());
+		
+	}
+
+}
+
+
+Test12.java:
+````````````
+package com.capg.jse.cfw;
+
+import java.util.TreeSet;
+
+public class Test12 {
+	
+	public static void main(String[] args) {
+		
+		 
+		TreeSet<Student> ts = new TreeSet<Student>(new StudentNameComparator());
+		Student st1 = new Student(100,"rama");
+		Student st2 = new Student(200,"harshitha");
+		Student st3 = new Student(67,"brundha");
+		
+		
+		ts.add(st1);
+		ts.add(st2);
+		ts.add(st3);
+		
+		
+		for(Student st: ts)
+		{
+			System.out.println(st.getStid() + " " +st.getStname());
+		}
+	}
+
+}
+
+
+
+BookManipulation usecase:
+``````````````````````````
+Book Manipulation
+
+The district central library needs an application to store book details of their library. The clerk who has all the rights to add a new book,search for any book,display the book details and should update the count of total number of books.
+You are provided with a  Book with the following private attributes:
+•	int isbnno
+•	String bookName
+•	String author
+Needed getters and setters are written.
+Create a class Library with the following private attribute:
+•	ArrayList<Book> bookList = new  ArrayList<Book>();
+Include the following methods:
+1.	void addBook(Book bobj) - This method should add the book object to the booklist.
+2.	boolean isEmpty() -  This method should return true if the booklist is empty else return false.
+3.	ArrayList<Book> viewAllBooks() - This method should return the list of books maintained in the library.
+4.	ArrayList<Book> viewBooksByAuthor(String author ) -  This method should return a list of books written by the author passed as argument. When you display an empty list it should print the message "The list is empty".
+5.	int countnoofbook(String bname) -  this method should return the count of books with the name passed as argument.
+Write a Main class to test the above functionalities.
+Sample Input and Output 1:
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+2
+The list is empty
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+1
+Enter the isbn no:
+123
+Enter the book name:
+Java
+Enter the author name:
+Bruce Eckel
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+1
+Enter the isbn no:
+124
+Enter the book name:
+C++
+Enter the author name:
+Eric Nagler
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+2
+ISBN no: 123
+Book name: Java
+Author name: Bruce Eckel
+ISBN no: 124
+Book name: C++
+Author name: Eric Nagler
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+3
+Enter the author name:
+Henry
+None of the book published by the author Henry
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+3
+Enter the author name:
+Eric Nagler
+ISBN no: 124
+Book name: C++
+Author name: Eric Nagler
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+4
+Enter the book name
+Java
+Count is 1
+1.Add Book
+2.Display all book details
+3.Search Book by author 
+4.Count number of books - by book name
+5.Exit
+Enter your choice:
+5
+
+
+Book.java:
+``````````
+package com.capg.jse.cfw;
+
+public class Book {
+	
+	private int isbnno;
+	private String bookName;
+	private String author;
+	
+	
+	public int getIsbnno() {
+		return isbnno;
+	}
+	public void setIsbnno(int isbnno) {
+		this.isbnno = isbnno;
+	}
+	public String getBookName() {
+		return bookName;
+	}
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+	
+
+
+}
+
+Library.java:
+``````````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+
+public class Library {
+	
+	
+	private ArrayList<Book> bookList = new  ArrayList<Book>();
+
+	public ArrayList<Book> getBookList() {
+		return bookList;
+	}
+
+	public void setBookList(ArrayList<Book> bookList) {
+		this.bookList = bookList;
+	}
+	
+
+	//adding the book to ArrayList
+	public void addBook(Book bobj) 
+	{
+		bookList.add(bobj);
+	}
+	
+	public boolean isEmpty()
+	{
+		return bookList.isEmpty();
+	}
+	
+	
+	public ArrayList<Book> viewAllBooks()
+	{
+		return bookList;
+	}
+	
+	public ArrayList<Book> viewBooksByAuthor(String author)
+	{
+		ArrayList<Book> alb = new ArrayList<Book>();
+		
+		for(Book b:bookList)
+		{
+			if(b.getAuthor().equalsIgnoreCase(author))
+			{
+				alb.add(b);
+			}
+		}
+		return alb;
+	}
+	
+	public int countnoofbook(String bname)
+	{
+		int count=0;
+		for(Book bk:bookList)
+		{
+			if(bk.getBookName().equalsIgnoreCase(bname))
+			{
+				count=count+1;
+			}
+		}
+		return count;
+	}
+}
+
+Main.java:
+``````````
+package com.capg.jse.cfw;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		
+		Library lb = new Library();
+		Book bbk = new Book();
+		Scanner sc = new Scanner(System.in);
+		while(true)
+		{
+			System.out.println("1.Add Book");
+			System.out.println("2.Display all bokk details");
+			System.out.println("3.Search Book by author");
+			System.out.println("4.Count number of books - by book name");
+			System.out.println("5.Exit");
+			
+			System.out.println("Enter your choice");
+			int choice = sc.nextInt();
+			if(choice==1) {
+				Book b = new Book();
+				System.out.println("Enter the isbn no:");
+				b.setIsbnno(sc.nextInt());
+				sc.nextLine();
+				System.out.println("Enter the book name:");
+				b.setBookName(sc.nextLine());
+				System.out.println("Enter the author name:");
+				b.setAuthor(sc.nextLine());
+				
+				lb.addBook(b);
+			}
+			if(choice==2)
+			{
+				ArrayList<Book> al = lb.viewAllBooks();
+				if(al.isEmpty()==false)
+				{
+					for(Book bk:al)
+					{
+						System.out.println("ISBN no: " + bk.getIsbnno());
+						System.out.println("Book name: " + bk.getBookName());
+						System.out.println("Author name: " + bk.getAuthor());
+					}
+				}
+				else
+				{
+					System.out.println("the list is empty");
+				}
+			}
+			
+			if(choice==3)
+			{
+				System.out.println("Enter the author name:");
+				sc.nextLine();
+				String name=sc.nextLine();
+				ArrayList<Book> bka = lb.viewBooksByAuthor(name);
+				if(bka.isEmpty()==false)
+				{
+					for(Book ab:bka)
+					{
+						System.out.println("ISBN no: " +ab.getIsbnno());
+						System.out.println("Book name: " + ab.getBookName());
+						System.out.println("Author name: " + ab.getAuthor());
+						
+					}
+				}
+				else
+				{
+					System.out.println("none of the book published by the author" + name);
+				}
+			}
+			if(choice==4)
+			{
+				System.out.println("Enter the book name:");
+				sc.nextLine();
+				String bkk = sc.nextLine();
+				int count=lb.countnoofbook(bkk);
+				System.out.println("Count is: " +count);
+			}
+			if(choice==5)
+			{
+				break;
+			}
+		}
+	}
+
+}
+
+
+
+
+-------------------------------------------------------
+PhoneBook Manipulation
+
+Airone mobile services needs to store their customer details in the company portal. The details are customer's first and last name, phone number, and email address. Help the company develop an application to maintain the details of their customer systematically. 
+
+You are provided with a class Contact with the following attributes as private.
+String firstName
+String lastName
+long  phoneNumber
+String emailId
+A 4 argument constructor and appropriate setters and getters to store and retrieve the details are also provided.
+Create a class PhoneBook with a private attribute
+List<Contact> phoneBook = new ArrayList<Contact>();
+Write the getters and setters.
+Write the following methods in the PhoneBook class.
+public void addContact(Contact contactObj) – This method should add the contact object to the phoneBook list.
+public List<Contact> viewAllContacts() – This method should return the list of all contacts available.
+public Contact viewContactGivenPhone(long phoneNumber) -  This method should return the contact details which has the phoneNumber given as parameter.
+public boolean removeContact(long phoneNumber) -  This method should remove the contact details which has the phoneNumber given as parameter.  If removed return true.  Else if the phone number is not available return false.
+Write a class Main with the main method.  Create the menu as shown in the Sample Input and Output and invoke the corresponding methods as per the choice provided.
+
+Sample Input and Output 1:
+Menu
+1.Add Contact
+2.Display all contacts
+3.Search contact by phone 
+4.Remove contact
+5.Exit
+Enter your choice: 1
+Add a Contact:
+Enter the First Name: John
+Enter the Last Name: Michael
+Enter the Phone No.: 9787878900
+Enter the Email: John@gmail.com
+Menu
+1.Add Contact
+2.Display all contacts
+3.Search contact by phone 
+4.Remove contact
+5.Exit
+Enter your choice: 1
+Add a Contact:
+First Name: Jhonty
+Last Name: Rhodes
+Phone No.: 9787888900
+Email: Jhonty@gmail.com
+Menu
+1.Add Contact
+2.Display all contacts
+3.Search contact by phone 
+4.Remove contact
+5.Exit
+Enter your choice: 2
+The contacts in the List are:
+First Name: John
+Last Name: Michael
+Phone No.: 9787878900
+Email: John@gmail.com
+First Name: Jhonty
+Last Name: Rhodes
+Phone No.: 9787888900
+Email: Jhonty@gmail.com
+Menu
+1.Add Contact
+2.Display all contacts
+3.Search contact by phone 
+4.Remove contact
+5.Exit
+Enter your choice: 3
+Enter the Phone number to search contact:9787888900
+The contact is:
+First Name: Jhonty
+Last Name: Rhodes
+Phone No.: 9787888900
+Email: Jhonty@gmail.com
+Menu
+1.Add Contact
+2.Display all contacts
+3.Search contact by phone 
+4.Remove contact
+5.Exit
+Enter your choice: 4
+Enter the Phone number to remove :9787888900
+Do you want to remove the contact (Y/N): Y
+The contact is successfully deleted.
+Menu
+1.Add Contact
+2.Display all contacts
+3.Search contact by phone 
+4.Remove contact
+5.Exit
+Enter your choice: 5
+
+
+
+
+Contact.java:
+``````````````
+   public class Contact {
+   
+   	private String firstName;
+   	private String lastName;
+   	private long  phoneNumber;
+   	private String emailId;
+   	public String getFirstName() {
+   		return firstName;
+   	}
+   	public void setFirstName(String firstName) {
+   		this.firstName = firstName;
+   	}
+   	public String getLastName() {
+   		return lastName;
+   	}
+   	public void setLastName(String lastName) {
+   		this.lastName = lastName;
+   	}
+   	public long getPhoneNumber() {
+   		return phoneNumber;
+   	}
+   	public void setPhoneNumber(long phoneNumber) {
+   		this.phoneNumber = phoneNumber;
+   	}
+   	public String getEmailId() {
+   		return emailId;
+   	}
+   	public void setEmailId(String emailId) {
+   		this.emailId = emailId;
+   	}
+   	public Contact(String firstName, String lastName, long phoneNumber,
+   			String emailId) {
+   		super();
+   		this.firstName = firstName;
+   		this.lastName = lastName;
+   		this.phoneNumber = phoneNumber;
+   		this.emailId = emailId;
+   	}
+   }
+
+
+PhoneBook.java:
+```````````````
+
+  import java.util.*;
+  public class PhoneBook{
+      private List<Contact> phoneBook = new ArrayList<Contact>();
+      public List<Contact> getPhoneBook(){
+          return phoneBook;
+      }
+      public void setPhoneBook(List<Contact> phoneBook){
+          this.phoneBook=phoneBook;
+      }
+      public void addContact(Contact contactObj){
+              phoneBook.add(contactObj);        
+      }
+      public List<Contact> viewAllContacts(){
+          return phoneBook;
+      }
+      public Contact viewContactGivenPhone(long phoneNumber){
+             Contact c =null;
+              for(Contact ct:phoneBook){
+                  if(ct.getPhoneNumber()==phoneNumber){
+                      c=ct;
+                  }
+              }
+              return c;
+      }
+      public boolean removeContact(long phoneNumber){
+          for (Contact y:phoneBook){
+              if(y.getPhoneNumber()==phoneNumber){
+                  phoneBook.remove(y);
+                  return true;
+              }
+          } 
+          return false;
+      }
+      
+      
+  }
+
+Main.java:
+`````````
+
+ import java.util.*;
+   public class Main{
+       public static void main (String[] args) {
+           Scanner sc  = new Scanner(System.in);
+           PhoneBook pb =new PhoneBook();
+           while(true){
+               System.out.println("Menu");
+               System.out.println("1.Add Contact");
+               System.out.println("2.Display all contacts");
+               System.out.println("3.Search contact by phone");
+               System.out.println("4.Remove contact");
+               System.out.println("5.Exit");
+               System.out.println("Enter your choice: ");
+               int choice =sc.nextInt();
+               if(choice==1){
+                   System.out.println("Add a Contact:");
+                   System.out.println("Enter the First Name:");
+                   sc.nextLine();
+                   String fn =sc.nextLine();
+                   System.out.println("Enter the Last Name:");
+                   String ln =sc.nextLine();
+                   System.out.println("Enter the Phone No.:");
+                   long pn=sc.nextLong();
+                   sc.nextLine();
+                   System.out.println("Enter the Email:");
+                   String mail =sc.nextLine();
+                   Contact cc= new Contact(fn,ln,pn,mail);
+                   pb.addContact(cc);
+               }
+               if(choice ==2){
+                   System.out.println("The contacts in the List are:");
+                   List<Contact> lpb=pb.viewAllContacts();
+                   for (Contact v:lpb ){
+                       System.out.println("First Name: "+v.getFirstName());
+                       System.out.println("Last Name: "+v.getLastName());
+                       System.out.println("Phone No.:"+v.getPhoneNumber());
+                       System.out.println("Email: "+v.getEmailId());
+                   } 
+               }
+               if(choice==3){
+                   System.out.println("Enter the Phone number to search contact:");
+                   long pnsc=sc.nextLong();
+                   Contact cpn=pb.viewContactGivenPhone(pnsc);
+                   System.out.println("The contact is:");
+                   System.out.println("First Name: "+cpn.getFirstName());
+                   System.out.println("Last Name: "+cpn.getLastName());
+                   System.out.println("Phone No.: "+cpn.getPhoneNumber());
+                   System.out.println("Email: "+cpn.getEmailId());
+                   
+               }
+               if(choice==4){
+                   System.out.println("Enter the Phone number to remove :");
+                   long rpn=sc.nextLong();
+                   sc.nextLine();
+                   System.out.println("Do you want to remove the contact(Y/N): ");
+                   char rc=sc.nextLine().charAt(0);
+                   if(rc=='y'||rc=='Y'){
+                       if(pb.removeContact(rpn)==true){
+                           System.out.println("The contact is successfully deleted.");
+                       }
+                   }
+               }
+               if(choice==5){
+                   break;
+               }
+           }
+           }
+   }
+
+
+Multithreading:
+````````````````
+  java is multithreaded
+  
+  
+ multithreading in java is a process of executing multiple threads
+ simultaneously.
+ 
+ ->parallel execution
+ 
+ what is thread?
+ 
+ smallest unit of processing.
+ 
+ advantages:
+ threads use a shared memory area 
+ they don't allocate separate memory area so it saves memory
+ 
+ 
+ multithreading -> multitasking (operating system)
+ 
+ 1)it doesn't block the user because threads are independent and you can
+ perform multiple operations at the same time.
+ 
+ 2) you can perform many operations together, so it saves time.
+ 
+ 3)Threads are independent, so it doesn't affect other thrads if an exception
+ occurs in a single thread.
+ 
+note:
+`````
+creating thread is nothing but creating an object of Thread class.
+
+Life cycle of a Thread:
+````````````````````````
+1.new
+2.runnable
+3.running
+4.waiting
+5.dead
+
+new:
+````
+whenever we create a Thread class object, that time we can say thread is
+in new state.
+
+2.runnable state:
+`````````````````
+once we create a thread, on top of thread if we call start() , then thread
+goes from new state to runnable state.
+
+
+note:
+`````
+all these threads are executed by ThreadScheduler.
+
+Threadscheduler is the part of jvm.
+
+once thread got picked by ThreadScheduler , it will go to running state.
+
+3.running state:
+````````````````
+thread will move from runnable state to running state once it got 
+picked by ThreadScheduler.
+
+4.waiting state:
+`````````````````
+on top of running threads if we invoke any sleep , wait, suspend() , then
+thread will move from running state to waiting state.
+
+note:
+````
+once the waiting period is over thread will move from waiting state to 
+runnable state -> running state.
+
+
+5.halted state/dead state:
+``````````````````````````
+once thread completes it's execution thread will move from running state
+to halted state.
+
+
+
+
+
+How to create a thread :
+``````````````````````
+we do have two ways to create a thread
+
+  1.By extending Thread class
+  2.By implementing Runnable interface.
+  
+  
+ex:
+```
+ class Test1 extends Thread
+ {
+    
+ }
+ 
+ Test1 obj = new Test1();//obj is a thread
+ 
+ex:
+```
+Runnable is an interface available in java.lang pacakge , it contains
+only one run() to provide the thread logic.
+
+
+note:
+`````
+always we have to write the thread logic inside the run() of either 
+Thread class or Runnable interface.
+
+
+ex:
+```
+   class Test1 implements Runnable
+   {
+   }
+   Test1 obj = new Test1();//Runnable object
+   Thread obj1 = new Thread(obj);//obj1 is thread object
+   
+   
+   
+note:
+`````
+once we create a thread, the next step is we have to start the thread
+
+the start() method of Thread class is used to start a newly created thread.
+
+->The thread moves from new state to the Runnable state.
+->when the thread gets a chance to execute, its target run() method will run.
+
+note:
+````
+we never call directly run() , we have to call start(), start() method
+internally calls run().
+
+example:
+````````
+package com.capg.jse.threading;
+
+public class Test1 extends Thread
+{
+	
+	//thread logic-overring the run() of Thread class
+	public void run()
+	{
+		System.out.println("user defined thread name: " +Thread.currentThread().getName());
+	}
+	
+	public static void main(String[] args) {
+		//main thread
+		
+		System.out.println("main thread name: " + Thread.currentThread().getName());
+		Test1 obj = new Test1();
+		
+		obj.setName("rama");
+		//start the thread
+		obj.start();
+	}
+
+}
+
+
+note:
+`````
+internally thread scheduler is following time slicing algorithm.
+
+note:
+````
+at a time only one thread got executed
+
+example:
+````````
+package com.capg.jse.threading;
+
+public class Test2 extends Thread
+{
+	
+	public void run() 
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println("user defined thread: " + i);
+		
+		}
+		
+	}
+	
+	public static void main(String[] args) throws Exception {
+		
+		
+		
+		Test2 obj = new Test2();
+		obj.start();
+		
+		//this logic gets executed by main thread
+		
+				for(int i=1;i<=10;i++)
+				{
+					System.out.println("main thread: " + i);
+					
+				}
+	}
+
+}
+
+
+output:
+```````
+main thread: 1
+user defined thread: 1
+user defined thread: 2
+user defined thread: 3
+main thread: 2
+main thread: 3
+main thread: 4
+user defined thread: 4
+main thread: 5
+main thread: 6
+main thread: 7
+main thread: 8
+user defined thread: 5
+main thread: 9
+user defined thread: 6
+main thread: 10
+user defined thread: 7
+user defined thread: 8
+user defined thread: 9
+user defined thread: 10
+
+
+note:
+````
+from above output order , threads are executed simultaneously
+
+
+2)creating thread by implements Runnable interface:
+``````````````````````````````````````````````````
+package com.capg.jse.threading;
+
+public class Test3 implements Runnable
+{
+	//thread logic
+	
+	public void run()
+	{
+		System.out.println("thread is running");
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test3 obj = new Test3();//Runnable object
+		
+		//converting Runnable object to Thread object
+		Thread obj1 = new Thread(obj);
+		
+		obj1.start();
+	}
+
+}
+
+
+note:
+````
+it is always highly recommended to create a thread by implements Runnable
+interface.
+
+************
+assignment:
+```````````
+implement two programs on top of sleep() and join() 
+
+ 
+  -daily prepare 100 to 200 java quiz questions
+  -lab assignments go through that file
+  -java8 
+************* 
+  
+  
+synchronization in java:
+`````````````````````````
+ at a time how many threads will get executed?
+ 
+  only one
+  
+
+  book the ticket
+  
+    -> multiple people are trying to book the same seat
+	-> only one user
+	
+ synchronization allows only one thread at a time, even multiple threads
+ are trying to access.
+ 
+ 
+  
+  search the bus services -> many users -> many threads
+  
+    ->all the threads are executed simultaneously
+  
+  
+  
+  ->it is the capability to control the access of multiple threads to any
+    shared resource.
+	
+	
+  ->it is better option where we want to allow only one thread to access the
+    shared resource.
+	
+note:
+````
+to make any method as synchronized method we have to use 'synchronized' keyword
+before we declare the method.
+
+example:
+```````
+  synchronized void m1()
+  {
+  //logic
+  }
+  
+ note:
+```````
+ when a thread invokes a synchronized method, it automatically acquires
+ the lock for that object and releases it when the thread completes its
+ task.
+
+Table.java:
+```````````
+package com.capg.jse.threading;
+
+class Table
+{
+	//user defined business logic method
+	//synchronized method
+	 synchronized void printTable(int n)
+	 {
+		 for(int i=1;i<=5;i++)
+		 {
+			 System.out.println(n*i);
+			 try {
+				Thread.sleep(400);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		 }
+	 }
+	
+}
+
+MyThread1.java:
+```````````````
+package com.capg.jse.threading;
+
+class MyThread1 extends Thread
+{
+	//association or has-a relation
+	
+
+	
+	Table t;
+	
+	
+	//parameterized constructor
+	MyThread1(Table t)
+	{
+		this.t=t;
+	}
+	
+	
+	//logic of thread
+	public void run()
+	{
+	    t.printTable(5);
+	}
+	
+	
+}
+MyThread2.java:
+`````````````````
+package com.capg.jse.threading;
+
+class MyThread2 extends Thread
+{
+	//association or has-a relation
+	
+
+	
+	Table t;
+	
+	
+	//parameterized constructor
+	MyThread1(Table t)
+	{
+		this.t=t;
+	}
+	
+	
+	//logic of thread
+	public void run()
+	{
+	    t.printTable(100);
+	}
+	
+	
+}
+ 
+Test4.java:
+````````````
+package com.capg.jse.threading;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		Table obj = new Table();
+		MyThread1 t1 = new MyThread1(obj);
+		MyThread2 t2 = new MyThread2(obj);
+		
+		t1.start();
+		t2.start();
+		
+	}
+
+}
+
+
+note:
+``````
+if you start the thread twice, we will get exception saying that 
+java.lang.IllegalThreadStateException
+
+note:
+`````
+if you call directly run() thread will not be created 
+
+assignment:
+```````````
+same synchronization program try to achieve using synchrnized blocks.
+
+ ex:
+    synchrnized
+	{
+	}
+	
+note:
+`````
+Thread is maintaining priority values it ranges from 1 to 10 
+normal priority value is 5
+minimum priority value is 1
+maximum priority value is 10
+
+Thread class 
+we do have some fields
+
+   MIN_PRIORITY
+   MAX_PRIORITY
+   NORM_PRIORITY
+   
+note:
+````
+even though we set the priority values we are not guaranteed to execute
+the threads based on the given the priority values.
+
+setPriority() is the method to set the priority value of a thread, 
+it varies from 1 to 10
+
+example:
+````````
+        MyThread1 t1 = new MyThread1(obj);
+		MyThread2 t2 = new MyThread2(obj);
+		
+		t1.setPriority(Thread.MIN_PRIORITY);
+		t2.setPriority(Thread.MAX_PRIORITY);
+		
+note:
+`````
+while we are setting the priorty value of a thread, if we give more  than 10
+or less than 1 , we will get runtime error or exception saying that 
+java.lang.IllegalArgumentException.
+
+
+note:
+`````
+synchronization advantage is to achieve consistent result.
+
+java 1.8 features:
+`````````````````
+1.lambda expression
+2.functional interfaces
+3.default methods/static methods
+4.predicates
+5.functions
+6.::
+7.stream api
+8.for each
+9.date and time api...
+
+
+lambda expression:
+`````````````````
+->the main objective of lambda expression is to bring benefits of 
+  functional programming in java.
+  
+->lambda expression is just a anonymous(nameless) function
+
+->it is used to write very concise code
+
+
+properties:
+```````````
+->function doesn't have name
+->doesn't have modifier
+->doesn't have return type
+
+
+eg:
+```
+public void m1()
+{
+  System.out.println("hello");
+} 
+
+
+()->{System.out.println("hello")}
+
+()->System.out.println("hello");
+
+
+eg:
+```
+public void add(int a, int b)
+{
+  System.out.println(a+b);
+}
+
+(int a, int b)->System.out.println(a+b);
+
+(a,b)->System.out.println(a+b);
+
+
+eg:
+````
+ public String str(String str)
+ {
+ return str;
+ }
+ 
+ (str)->str;
+ 
+ 
+note:
+`````
+a lambda expression can have zero or more number of arguments.
+
+functional interface:
+`````````````````````
+
+if an interface contains only one abstract method, such type of interfaces
+are called functional interfaces and the method is called functional method
+or single abstract method(sam)
+
+
+interface i1{
+ void m1();
+ void m2();
+}
+
+->no , it is a functional interface
+
+interface Runnable
+{
+ void run();
+}
+->yes, it  is a functional interface.
+
+Comparable interface contains -> compareTo()
+...
+we have many predefined functioanl interfaces, as per our requirement
+we also can define our own functional interfacs.
+
+interface:
+`````````
+interface doens't contains any defined methods
+only it contains abstract methods
+  ->method declaration
+  
+from java1.8 onwards, inside interface also we can define the methods
+
+  -default methods
+  -static methods
+  
+note:
+`````
+functional interface should always contains only one abstract method.
+
+eg:
+```
+@FunctionalInterface
+interface interf1
+{
+
+  public abstract void m1();
+  default void m2(){
+  //logic
+  }
+}
+
+note:
+````
+to represent yes it is a functional interface we may use one predefined
+annotation i.e @FunctionalInterface.
+
+without lamdba expression:
+``````````````````````````
+Interf.java:
+```````````
+package com.capg.jse.java8;
+
+@FunctionalInterface
+public interface Interf {
+	
+	public void m1();
+	
+
+}
+
+
+Test1.java(implementation class for interface):
+```````````````````````````````````````````````
+package com.capg.jse.java8;
+//implementation class
+public class Test1 implements Interf {
+
+	@Override
+	public void m1() {
+		System.out.println("iam from m1");
+		
+	}
+
+}
+
+
+Test2.java(execution logic class):
+``````````````````````````````````
+execution logic class is a class which contains main() method and the 
+java execution starts from that particular class only.
+
+Test2.java:
+```````````
+package com.capg.jse.java8;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+		Interf i1 = new Test1();
+		i1.m1();
+	}
+
+}
+
+with lambda expression:
+``````````````````````````
+package com.capg.jse.java8;
+
+@FunctionalInterface
+public interface Interf {
+	
+	public void m1();
+	
+}
+
+Test1.java:
+``````````
+package com.capg.jse.java8;
+
+
+public class Test1{
+	public static void main(String[] args) {
+		
+
+
+	Interf i1 = 
+			()->System.out.println("iam from m1");
+	
+	i1.m1();
+	
+	
+	}
+
+}
+
+one more example: 
+``````````````````
+package com.capg.jse.java8;
+
+@FunctionalInterface
+public interface Interf {
+	
+	public void sum(int a, int b);
+	
+}
+
+
+Test1.java:
+````````````
+package com.capg.jse.java8;
+
+
+public class Test1{
+	public static void main(String[] args) {
+		
+
+
+	Interf i1 = 
+			(a,b)->System.out.println("the sum is: " + (a+b));
+	
+	i1.sum(2,3);
+	
+	
+	}
+
+}
+
+
+example:
+````````
+package com.capg.jse.java8;
+
+@FunctionalInterface
+public interface Interf {
+	
+	public int square(int a);
+	
+	
+}
+
+
+Test1.java:
+```````````
+package com.capg.jse.java8;
+
+
+public class Test1{
+	public static void main(String[] args) {
+		
+
+
+	Interf i1 = 
+			(x)->x*x;
+			
+			int square = i1.square(100);
+			
+			System.out.println("the square value is: " + square);
+	
+	}
+
+}
+
+
+note:
+`````
+in interface we can define two methods from java 1.8 version onwards
+
+  -default methods
+  -static methods
+  
+ interface i1{
+  
+    default void m1()
+	{
+	  //logic
+	}
+ }
+ 
+ class Test1 implements i1{
+ 
+
+ }
+
+the main advantage of default methods is without effecting implementation
+classes we can add new functionality to the interface(bakcward compatibility)
+
+example:
+`````````
+package com.capg.jse.java8;
+
+interface Interf1
+{
+	//logic
+	default void m1()
+	{
+		System.out.println("default methods");
+	}
+}
+public class Test3 implements Interf1{
+	
+	    //logic
+		public void m1()
+		{
+			System.out.println("default method-impl class");
+		}
+		
+		public static void main(String[] args) {
+			
+			
+			Test3 obj = new Test3();
+			obj.m1();
+		}
+
+}
+
+
+
+note:
+``````
+two interfaces can contain default method with same signature then
+there may be a chance of ambiguity problem to the implementation class.
+
+
+To overcome this problem, we should override default method in the implementation
+class otherwise we get compile time error.
+
+Left.java:
+````````````
+package com.capg.jse.java8;
+
+public interface Left {
+	default void m1()
+	{
+		System.out.println("left default method");
+	}
+
+}
+
+Right.java:
+```````````
+package com.capg.jse.java8;
+
+public interface Right {
+	
+	default void m1()
+	{
+		System.out.println("right default method");
+	}
+
+}
+
+
+Test4.java:
+````````````
+package com.capg.jse.java8;
+
+public class Test4 implements Left, Right {
+
+	//overriding default method inside implementation class
+	public void m1()
+	{
+		//calling Right interface m1()
+		Right.super.m1();
+		//calling Left interface m1()
+		Left.super.m1();
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test4 obj  = new Test4();
+		
+		obj.m1();
+		
+	}
+}
+
+
+static methods inside interface:
+`````````````````````````````````
+from 1.8 version onwards in addition to default methods we can define
+static methods also inside interface to define utility functions.
+
+
+note:
+``````
+interface static methods by default not available to the implementation 
+classes.
+
+hence by using implementation class reference or object we can't call
+the interface static methos.
+
+example:
+````````
+package com.capg.jse.java8;
+
+interface i1
+{
+	//static method
+	public static void sum(int a, int b)
+	{
+		System.out.println("the sum: " + (a+b));
+	}
+}
+public class Test5 implements i1{
+	
+	public static void main(String[] args) {
+		
+		
+		Test5 obj = new Test5();
+		//call the interface static method using interface name not by using object name
+		
+		
+		i1.sum(3, 4);
+	}
+
+}
+
+
+note:
+``````
+from jdk 1.8 version onwards, we can define main() inside interface and
+hence we can even run the application also.
+
+example:
+``````````
+package com.capg.jse.java8;
+
+public interface i2 {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("welcome");
+	}
+
+}
+
+lambda expressions with collections:
+``````````````````````````````````````
+//without lambda expression
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+
+class MyComparator implements Comparator<Integer>
+{
+	public int compare(Integer i1, Integer i2)
+	{
+		if(i1<i2) {
+			return 9;
+		}
+		else if(i1>i2) {
+			return -9;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+}
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> l = new ArrayList<Integer>();
+		
+		l.add(10);
+		l.add(0);
+		l.add(5);
+		l.add(20);
+		
+		System.out.println("before sorting: " + l);
+		
+		
+		Collections.sort(l,new MyComparator());
+		
+		System.out.println("after sorring: " + l);
+		
+	}
+
+}
+
+with lambda expressions:
+````````````````````````
+//without lambda expression
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.Collections;
+public class Test7{
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> l = new ArrayList<Integer>();
+		
+		l.add(10);
+		l.add(0);
+		l.add(5);
+		l.add(20);
+		
+		System.out.println("before sorting: " + l);
+		
+		Collections.sort(l,(i1,i2)->(i1<i2)?1:(i1>i2)?-1:0);
+		
+		System.out.println("after sorring: " + l);
+		
+	}
+
+}
+
+
+assignment:
+```````````
+do the same kind of program w.r.to TreeSet
+
+lambda expression w.r.to TreeMap and entrySet():
+````````````````````````````````````````````````
+package com.capg.jse.java8;
+
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		
+		TreeMap<Integer, String> m = new TreeMap<Integer,String>(
+				
+				(x,y)->(x<y)?1:(x>y)?-1:0
+				
+				);
+		
+		m.put(100, "bunny");
+		m.put(600, "dipanvi");
+		m.put(200, "chinny");
+		m.put(700, "vinny");
+		m.put(400,"vinny");
+		
+		
+		Set<Entry<Integer, String>> entry = m.entrySet();
+		
+		for(Entry<Integer,String> e:entry)
+		{
+			if(e.getValue().startsWith("v"))
+			{
+				System.out.println(e.getKey() + " " + e.getValue());
+			}
+		}
+		
+	}
+
+}
+
+example w.r.to user defined object along with lambda expression:
+````````````````````````````````````````````````````````````````
+Employee.java:
+````````````````
+package com.capg.jse.java8;
+
+public class Employee {
+	
+	
+    int empid;
+	String empname;
+	
+	public Employee(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return  empid + " " + empname;
+	}
+	
+	public Employee()
+	{
+		
+	}
+
+}
+
+Test9.java:
+```````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Employee> l = new ArrayList<Employee>();
+		
+		l.add(new Employee(100,"Ram"));
+		l.add(new Employee(600,"brunda"));
+		l.add(new Employee(400,"tasleem"));
+		l.add(new Employee(500,"yash"));
+		l.add(new Employee(300,"bindhu"));
+		
+		System.out.println("before sorting");
+		System.out.println(l);
+		
+		Collections.sort(l,				
+		(e1,e2)->(e1.empid<e2.empid)?-1:(e1.empid>e2.empid)?1:0
+			);
+		
+		System.out.println("after sorting");
+		System.out.println(l);
+		
+		
+		
+		
+	}
+
+}
+
+
+assignment: do the same w.r.to empname
+
+
+Predicate:
+``````````
+A predicate is a function with a single argument and returns boolean
+value.
+
+Predicate interface prsent in java.util.function package.
+
+It is a functional interface 
+
+
+->method name: test()
+
+
+q: write a predicate to check whether given integer is greater than 10 or
+not?
+
+     public boolean test(Integer i)
+	 {
+	 
+	    if(i>10)
+		{
+		  return true;
+		}
+		else
+		{
+		  return false;
+		}
+	 }
+	 
+lamdba expression: (i)->(i>10)
+
+Predicate<Integer> p = i->i>10;
+
+Systtem.out.println(p.test(78));//true
+System.out.println(p.test(8));//false
+
+
+
+example:
+``````````
+package com.capg.jse.java8;
+
+import java.util.function.Predicate;
+
+public class Test10 {
+	
+	public static void main(String[] args) {
+		
+		
+		Predicate<Integer> p = i->i>10;
+		
+		System.out.println(p.test(78));
+		System.out.println(p.test(6));
+		
+	}
+
+}
+
+assignment:
+```````````
+write a predicate to check the length of given string is greater than 3 or not?
+
+assignment:
+```````````
+write a predicate to check whether the given collection is empty or not?
+
+
+Predicate joining:
+```````````````````
+It's possible to join predicates into a single predicate by using some 
+methods.
+
+  and()
+  or()
+  negate()
+  
+
+example:
+````````
+package com.capg.jse.java8;
+
+import java.util.function.Predicate;
+
+public class Test11 {
+	
+	public static void main(String[] args) {
+		
+		
+		int[] x = {0,5,10,15,20,25,30};
+		
+		Predicate<Integer> p1 = i->i>10;
+		Predicate<Integer> p2 = i->i%2==0;
+		
+		System.out.println("the numbers greater than 10");
+		
+		m1(p1,x);
+		
+		
+		System.out.println("the even numbers are:");
+		
+		m1(p2,x);
+		
+		System.out.println("the numbers greater than 10 and even numbers:");
+		
+		m1(p1.and(p2),x);//predicate joining
+		
+		System.out.println("the numbers greater than 10 or even numbers");
+		
+		m1(p1.or(p2),x);
+		
+		
+		
+		
+	}
+	
+	public static void m1(Predicate<Integer> p,int[] x)
+	{
+		for(int x1:x)
+		{
+			if(p.test(x1))
+				System.out.println(x1);
+		}
+		
+	
+	}
+	
+	
+
+}
+
+
+output:
+````````
+the numbers greater than 10
+15
+20
+25
+30
+the even numbers are:
+0
+10
+20
+30
+the numbers greater than 10 and even numbers:
+20
+30
+the numbers greater than 10 or even numbers
+0
+10
+15
+20
+25
+30
+
+
+assignment:
+````````````
+define one array string with some values and display the names which starts with
+"r" by using predicate?
+
+
+   pre-defined functional interfaces:
+   
+      Function
+	  Consumer
+	  Supplier....
+	  
+	  
+Streams:
+````````
+To process objects of the collection.
+
+in 1.8 version streams concept introduced.
+
+q)difference between Collection and stream?
+
+answer: if we want to represent a group of individual objects as a single
+entity then we should go for Collection.
+
+if we want to process a group of objects from the collection then we 
+should go for streams.
+
+
+we can create a stream object to the collection by using stream() of Collection
+interface.
+
+stream() method is a default method added to the Collection interface
+in 1.8 version.
+
+example:
+````````
+                Stream s = c.stream();
+				
+				
+	where c is any collection class.
+	
+Stream is an interface present in java.util.stream pacakge.
+
+Once we got the stream , by using that we can process objects of that 
+collection.
+
+we can process the objects in 2 phases.
+
+  1.configuration
+  2.processing
+  
+configuration:
+`````````````
+we can configure either by using filter mechanism or by using map 
+mechanism.
+
+filterning:
+````````````
+we can configure a filter to filter elements from the collection based
+on some boolean condition by using filter() of Stream interface>
+
+  public Stream filter(Predicate<T> t)
+  
+  
+Here Predicate can be a boolean valued function/lambda expression.
+
+ex:
+
+        Stream s = c.stream();
+		Stream s1 = s.filter(i->i%2==0);
+		
+conclusion:
+`````````````
+Hence to filter elements of Collection based on some boolean condition 
+we should go for filter method.
+
+		
+mapping:
+````````
+if we want to create a separate new object for every object present 
+in the collection based on our requirement then we should go for 
+map() of Stream interface.
+ 
+   public Stream map(Function f)
+   
+ ex:
+ 
+    Stream s = c.stream();
+    Stream s1 = s.map(i->i+10)
+	
+	
+Once we performed configuration we can process objects by using several 
+methods based on the requirement.
+
+  collect()
+  count()
+  sorted()
+  min()
+  max()
+  forEach()
+  toArray()
+  limit()
+  of()
+  flatMap()
+  ....
+  
+example without streams:
+``````````````````````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+
+public class Test12 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> l1 = new ArrayList<Integer>();
+		
+		for(int i=0;i<=10;i++) {
+			l1.add(i);
+		}
+		System.out.println(l1);
+		
+		ArrayList<Integer> l2 = new ArrayList<Integer>();
+		for(Integer i:l1)
+		{
+			if(i%2==0)
+				l2.add(i);
+		}
+		System.out.println(l2);
+		
+	}
+
+}
+
+
+example with streams:
+``````````````````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Test13 {
+
+public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> l1 = new ArrayList<Integer>();
+		
+		for(int i=0;i<=10;i++) {
+			l1.add(i);
+		}
+		System.out.println(l1);
+		
+		List<Integer> l2 = l1.stream().filter(i->i%2==0).collect(Collectors.toList());
+		
+		System.out.println(l2);
+		
+		
+	}
+}
+
+using map() and collect():
+``````````````````````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Test14 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<String> l = new ArrayList<String>();
+		
+		l.add("rvk");
+		l.add("rk");
+		l.add("rvki");
+		l.add("rvkir");
+		System.out.println(l);
+		
+		List<String> l2 = l.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
+	    System.out.println(l2);
+	
+	}
+}
+
+
+example:
+`````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Test14 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<String> l = new ArrayList<String>();
+		
+		l.add("rajini");
+		l.add("yash");
+		l.add("ramakrishna");
+		l.add("saleema");
+		l.add("rajitha");
+		l.add("pavan");
+		l.add("leshv");
+		l.add("charv");
+		System.out.println(l);
+		
+		//List<String> l2 = l.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
+	     long count = l.stream().filter(s->s.length()==5).count();
+		System.out.println("the number of 5 lenght string is :" + count);
+	
+	}
+}
+
+
+example:
+````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Test14 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<String> l = new ArrayList<String>();
+		
+		l.add("rajini");
+		l.add("yash");
+		l.add("ramakrishna");
+		l.add("saleema");
+		l.add("rajitha");
+		l.add("pavan");
+		l.add("leshv");
+		l.add("charv");
+		System.out.println(l);
+		
+		//List<String> l2 = l.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
+	    //long count = l.stream().filter(s->s.length()==5).count();
+		
+		List<String> l3 = l.stream().sorted().collect(Collectors.toList());
+		System.out.println("according to default natural sorting order: " + l3);
+	
+		
+		List<String> l4 = l.stream().sorted((s1,s2)->-s1.compareTo(s2)).collect(Collectors.toList());
+	    System.out.println("in descending order: " + l4);
+	    
+	}
+}
+
+
+processing by min() and max():
+```````````````````````````````
+min(Comparator c)
+
+-returns minimum value according to specified comparator
+
+max(Comparator c)
+
+-returns maximum value according to specified comparator.
+
+example:
+````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+
+public class Test15 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> l = new ArrayList<Integer>();
+		
+		l.add(20);
+		l.add(45);
+		l.add(5);
+		l.add(56);
+		l.add(78);
+		l.add(345);
+		
+		System.out.println(l);
+		//minimum value
+		Integer l1 = l.stream().min((s1,s2)->s1.compareTo(s2)).get();
+		System.out.println("minimum value is: : " + l1);
+		//maximum value
+		Integer l2 = l.stream().max((s1,s2)->s1.compareTo(s2)).get();
+		System.out.println("maximum value is : " + l2);
+	}
+
+}
+
+
+example on forEach() of Stream interface:
+````````````````````````````````````````
+package com.capg.jse.java8;
+
+import java.util.ArrayList;
+
+public class Test16 {
+	public static void main(String[] args) {
+
+		ArrayList<Integer> l = new ArrayList<Integer>();
+
+		l.add(20);
+		l.add(45);
+		l.add(5);
+		l.add(56);
+		l.add(78);
+		l.add(345);
+		
+		System.out.println("using for each loop");
+		
+		for(Integer i: l)
+		{
+			System.out.println(i);
+		}
+		
+		System.out.println("using stream interface foreach loop");
+		
+		l.stream().forEach(i->System.out.println(i));
+	}
+
+}
+
+
+refer following concepts:
+`````````````````````````
+toArray()
+of()
+limit()
+::
+date time api 
+
+
+junit & mocking(Mockito):
+`````````````````````````
+ 
+what is unit testing and why?
+``````````````````````````````
+as a programmer we are writing the code
+as a tester we are testing the code
+
+once programmer completes his code
+before you move your code from dev
+environment to qa environment we have to test ourcode whether it is correct
+or not?
+
+ ->developer
+ 
+what is unittesting and why?
+````````````````````````````
+unit testing is a type of software testing where individual units or
+components of a software are tested.
+
+The purpose is to validate that each unit of the software code
+performs as expected.
+
+unit testing is done during the development of an application 
+by the developers.
+
+unit tests isolate a section of code and verify it's correctness.
+
+A unit may be an individual function , method, procedure, modulename
+or object.
+
+
+what is junit?
+```````````````
+->junit is a free and open source unit testing framework for java applications.
+
+->junit was developed by kent back and erich gamma.
+
+->it's first version was released in 1997
+
+->it became one of the most popular testing frameorks in the java 
+  community due to its ease of use.
+  
+->it is a lightweight testing framework which allowed java developers to 
+  write unit test cases in java language.
+  
+->the current version of junit is 5.
+
+
+ junit -> jar file -> 
+  
+  
+package com.capg.jse.junit;
+
+public class Calculator {
+	
+	//business logic method 1
+	public int add(int x, int y)
+	{
+		return x+y;
+	}
+	//business logic method 2
+	public int mul(int x, int y)
+	{
+		return x*y;
+	}
+
+}
+
+CalculatorTest.java:
+`````````````````````
+package com.capg.jse.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	
+	private static Calculator obj = null;
+	
+	@BeforeClass
+	public static void init()
+	{
+		obj=new Calculator();
+	}
+	
+	@AfterClass
+	public static void destroy()
+	{
+		obj=null;
+	}
+	@Test
+    public void testAdd()
+    {
+    	
+    	int actualResult = obj.add(10,20);
+    	int expectedResult = 30;
+    	assertEquals(expectedResult, actualResult);
+    }
+	
+	
+	@Test
+	public void testMul()
+	{
+		
+		
+		int actualResult = obj.mul(10,20);
+		int expectedResult = 2000;
+		assertEquals(expectedResult, actualResult);
+		
+	}
+	
+	
+}
+
+
+junit5 architecture:
+````````````````````
+
+Junit 5 Architecture mainly divide in three modules:
+
+JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+
+
+junit annotations:
+```````````````````
+@Test-to mark a method as test case method
+@BeforeEach-before executing each and every test case method
+@AfterEach-after executing each and every test case method
+@BeforeAll-5 test case -1's
+@AfterAll-1 time 
+@ParameterizedTest
+
+@ValueSource
+@CsvFileSource
+@Disabled
+
+....
+
+junit Assertions:
+```````````````````
+to refer junit5 api official documentation use the below url
+
+https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html
+
+->junit5 asseertions help us in validating the expected output with 
+  the actual output of a test case.
+  
+->in short, assertions are nothing but static methods that we call in our 
+  tests to verify expected behaviour.
+
+->All Junit jupiter assertions are present in the 
+  org.junit.jupiter.api.Assertions class
+  
+  
+ Junit Assertion Methods:
+ `````````````````````````
+ assertEquals and assertNotEquals
+ assertTrue and assertFalse
+ assertNull and assertNotNull
+ assertSame and assertNotSame
+ assertThrows
+ 
+ ....
+ 
+example:
+````````
+package com.capg.jse.junit;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest2 {
+
+	@BeforeEach
+	public void beforeEach() {
+		System.out.println("before each method executed");
+	}
+
+	@AfterEach
+	public void afterEach() {
+		System.out.println("after each method executed");
+	}
+
+	@Test
+	@DisplayName("testing test1 method")
+	public void test1() {
+		System.out.println("iam test1 method executed");
+	}
+
+	@Test
+	@Disabled
+	public void test2() {
+		System.out.println("iam test2 method executed");
+	}
+	@BeforeAll
+	public static void beforeAll()
+	{
+		System.out.println("iam executed before but only once");
+	}
+	@AfterAll
+	public static void afterAll()
+	{
+		System.out.println("iam executed after all test but only once");
+	}
+}
+
+
+example on @ParameterizedTest and @ValueSource:
+````````````````````````````````````````````````
+package com.capg.jse.junit;
+
+
+public class PalindromeCheck{
+
+	  public boolean isPalindrome(String str){
+	  
+	   String reverse="";
+	   int length = str.length();
+	   for(int i=length-1;i>=0;i--)
+	   {
+	       reverse = reverse+str.charAt(i);
+		   }
+		   if(str.equals(reverse)){
+		   return true;
+		   }
+		   else{
+		   return false;
+		   }
+		   
+	  }
+	}   
+	
+	
+TestPalindromeCheck.java:
+``````````````````````````
+package com.capg.jse.junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+class TestPalindromeCheck {
+
+	@ParameterizedTest
+	@ValueSource(strings = {"racecar","radar","madam","malayalam","liril","rajini"})
+	public void testIsPalindrome(String str)
+	{
+		PalindromeCheck obj = new PalindromeCheck();
+		boolean actual = obj.isPalindrome(str);
+		assertTrue(actual);
+	}
+
+}
+
+
+Mockito:
+````````
+//service layer
+class UserService
+{
+ 
+    private UserDao dao;
+	 
+    public String getUserEmail(Integer uid)
+	{
+	
+	    String email = dao.findEmailById(uid);
+		String format = email.toLowerCase();
+		return format;
+	}
+}
+
+
+class UserDao
+{
+
+ String findEmailById(int uid)
+ {
+   //db logic
+ }
+ 
+ return email;
+ 
+
+
+}
+
+to perform unittesting in isolation manner
+
+
+
+
+MockDao object / duplicate object /proxy object /fake object
+
+what is mocking:
+````````````````
+
+Mocking is a process used in unit testing when the unit being tested 
+has external dependencies.
+
+The purpose of mocking is to isolate and focus on the code being tested
+and not on the behaviour of state of external dependencies.
+
+In mocking , the dependencies are replaced by closely controlled replacements objects
+that simulate the behaviour of the real ones.
+
+Ther ar three main possible types of replacement objects
+  
+    -fakes
+	-stubs
+	-mocks
+	
+	
+There are two types of mocking framework are available
+  
+   -stub based mock framework (ex: easy mock)
+   
+   -bytecode manipulation based mock framework(ex:mockito,powermock)
+   
+   
+When to use Mockito:
+````````````````````
+->when a component is to be tested, but that component depends on some 
+other component, which is under development
+
+->when the real components perform slowly, then mock objects are used
+to perofrm testing.
+
+->when there are any concerns with the infrastructure that makes
+the testing impossible.
+
+url to download mockito-all jar file:
+``````````````````````````````````````
+https://mvnrepository.com/artifact/org.mockito/mockito-all/1.10.19
+
+stubbing example:
+``````````````````
+package com.capg.jse.mockito;
+
+import java.util.List;
+
+public interface ToDoService {
+	
+	public List<String> getTodos(String user);
+
+}
+
+
+ToDoServiceStub.java:
+```````````````````````
+package com.capg.jse.mockito;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ToDoServiceStub implements ToDoService {
+
+	@Override
+	public List<String> getTodos(String user) {
+		
+		
+		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("use core java");
+		al.add("use Spring core");
+		al.add("use Hibernate");
+		al.add("use Spring Mvc");
+		return al;
+	}
+
+}
+
+ToDoBusiness.java:
+```````````````````
+package com.capg.jse.mockito;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ToDoBusiness {
+	
+	public ToDoService doService;
+
+	public ToDoBusiness(ToDoService doService) {
+		super();
+		this.doService = doService;
+	}
+	
+	
+	public List<String> getTodosforSpring(String user)
+	{
+		
+		
+		List<String> retrievetodos = new ArrayList<String>();
+		
+		List<String> todos = doService.getTodos(user);
+		
+		
+		for(String todo:todos)
+		{
+			if(todo.contains("Spring"))
+			{
+				retrievetodos.add(todo);
+			}
+		}
+		
+		return retrievetodos;
+	}
+
+}
+
+ToDoBusinessStub.java(test class):
+`````````````````````````````````````
+package com.capg.jse.mockito;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+class ToDoBusinessStub {
+
+	@Test
+	public void test()
+	{
+		
+		
+		ToDoService doServiceStub = new ToDoServiceStub();
+		ToDoBusiness business = new ToDoBusiness(doServiceStub);
+		
+		List<String> retrievetodos = business.getTodosforSpring("dummy");
+		
+		
+		assertEquals(2, retrievetodos.size());
+		
+		System.out.println("stub is working correctly...");
+	}
+
+}
+
+
+database:
+````````
+
+   sql: is the propritery language for all the databases
+   
+   java
+   php
+   python  --> omg is the standard 
+   
+   sql is the standard
+   
+   every database must follow those standards
+   
+   
+ sql : structured query language
+ from database to database there might be a change to vary w.r.to queries.
+ 
+ query: it is a question to databse engine.
+ 
+ 
+ 
+ to download postgress sql:
+ ``````````````````````````
+ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+ 
+ 
+ based on your operating system try to download the correct one
+ 
+ note:
+ `````
+ once postgress got installed , to check whether it got installed or not 
+ we have two ways'
+ 
+  one is cli (Command line interface)
+  
+  gui(graphical user interface)
+  
+  
+  
+ 
+commands:
+``````````
+create database test
+\l --> to list out all the databases
+\c test -> to connect to created database
+
+to drop the database:
+
+ drop database test
+ 
+create table company(id int primary key not null, name text not null, age int not null, address char(5),salary real);
+
+\d company
+
+output:
+````````
+ Table "public.company"
+ Column  |     Type     | Collation | Nullable | Default
+---------+--------------+-----------+----------+---------
+ id      | integer      |           | not null |
+ name    | text         |           | not null |
+ age     | integer      |           | not null |
+ address | character(5) |           |          |
+ salary  | real         |           |          |
+Indexes:
+    "company_pkey" PRIMARY KEY, btree (id)
+	
+	
+\! cls --> to clear the screen
+
+
+ create table department(id int primary key not null, dept char(5) not null,emp_id int not null);
+ 
+ drop table department;
+ 
+ 
+ insert into company(id,name,age,address,salary) values(100,'ram',90,'hyd',10000);
+ 
+ 
+ select * From company;
+ 
+ insert into company 
+ values(102,'rajini',23,'che',30000),(103,'yash',24,'delhi',50000);
+ 
+ select name,age from company;
+ 
+ 
+ 
+ arithmetic operations:
+ ``````````````````````
+ select 2+3;
+ select 2*3;
+ select 14%4;
+ select 2^3;
+ select |/25; square root value
+ select ||/27; cube root value
+ 
+ where clause:
+ `````````````
+ to filter the records  based on the requirement
+ 
+ select * From company;
+ all the rows we are getting.
+ 
+ select name from company where age=90;
+ select name from company where age!=90;
+ select name from company where age<>90;
+ select name from company where age<20;
+ select name from company where age>20;
+ select name from company where age<=20;
+ select name from company where age>=20;
+ 
+ 
+ 
+   ->to filter the records from the table based on the requirement.
+   
+   
+   
+Logical operators:
+``````````````````
+ and 
+ or
+ null
+ like
+ in
+ between
+ 
+commands:
+``````````
+ select * From company where age>=24 and salary>30000;
+ select * From company where age>=24 or salary>30000;
+ select * From company where salary is null;
+ select * from company where name like 'b%';
+ select * from company where name like '%a%';
+ select * from company where name like '%u';
+ select * From company where age in('20','23','24');
+ select * From company where age between 23 and 90;
+ 
+ 
+ 
+aggregate functions:
+```````````````````
+select name as employee_name from company;
+select count(*) from company;
+select max(age) from company;
+select  min(age) from company;
+select sum(salary) from company;
+select avg(salary) from company;
+select current_timestamp;
+
+
+constraints:
+``````````````
+SQL constraints are a set of rules implemented on tables in relational databases to dictate what data can be inserted, updated or deleted in its tables. This is done to ensure the accuracy and the reliability of information stored in the table
+
+
+->constraints are helping to validate the data while we are manipulating the data.
+
+
+create table products(product_no integer,name text,price numeric check(price>0),discounted_price numeric check(discounted_price>0) , check(price>discounted_price));
+
+
+insert into products values(2,'soap',10,-4) --> invalid
+insert into products values(2,'soap',-10,4) --> invalid
+insert into products values(2,'soap',10,14) --> invalid
+insert into products values(2,'soap',10,4) --> valid
+
+
+not null constraint:
+````````````````````
+The NOT NULL constraint is used to ensure that a given column of a table is never assigned the null value. Once a NOT NULL constraint has been defined for a particular column, any insert or update operation that attempts to place a null value in that column will fail.
+
+query:
+```````
+create table products(
+product_no integer not null,
+name text not null,
+price numeric not null
+check(price>0));
+
+
+insert into products values(12,null,-5) --> invalid
+insert into products values(12,'soap',-5) --> invalid
+insert into products values(12,'soap',5) -->valid
+
+
+
+unique constraint:
+``````````````````
+The UNIQUE constraint in SQL is used to ensure that no duplicate values will be inserted into a specific column or combination of columns that are participating in the UNIQUE constraint and not part of the PRIMARY KEY.
+
+
+query:
+``````
+create table products(product_no integer unique,name text,price numeric check(price>0));
+
+
+
+
+insert into products values(101,'soap',90);
+
+insert into products values(101,'soap',90);-->invalid
+
+
+
+applying  unique constraint on more than one column:
+``````````````````````````````````````````````````````
+create table products(product_no integer,
+					  name text,
+					  price numeric check(price>0),
+					  unique(product_no,name)
+					 );
+					 
+					 
+insert into products values(100,'soap',90);
+insert into products values(100,'mouse',90);
+insert into products values(101,'mouse',90);
+insert into products values(101,'mouse',90);
+
+select * From products;
+
+
+
+
+primary key constraint:
+````````````````````````
+primary key = unique + not null
+
+The PRIMARY KEY constraint uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
+
+query:
+``````
+create table products(product_no integer primary key,
+					  name text,
+					  price numeric check(price>0)
+					  
+					 );
+					 
+insert into products values(null,'soap',90); --> Not Null Constraint
+insert into products values(100,'soap',90);	-->valid
+insert into products values(100,'soap',90);	-->unique constraint
+
+
+composite primary key:
+``````````````````````
+
+applying primary key constraint on more than one column in a table
+
+create table products(product_no integer,
+					  name text,
+					  price numeric check(price>0),
+					  primary key(product_no,name)
+					 );		 
+ 
+ 
+Foregin key constraint:
+```````````````````````
+
+A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
+
+
+note: a foregin key is always created in child table.
+
+
+
+create table products(product_no integer primary key,
+					  name text,
+					  price numeric check(price>0)
+					  
+					 );
+					 
+					 
+create table orders(order_id integer primary key,product_no  integer
+					references products(product_no));
+					
+					
+select * From products;		
+insert into orders values(1,100);
+insert into orders values(1,101);
+
+
+->assignments
+
+on delete restrict
+
+on delete cascade
+
+
+
+alter command:
+`````````````
+
+alter table company add gender char(8);
+
+alter table company drop column gender;
+
+alter table company add constraint pk_id primary key(id);
+
+alter table company drop constraint company_pkey;
+
+
+assignments:
+`````````````
+update 
+delete
+
+
+limit:
+`````
+PostgreSQL LIMIT is an optional clause of the SELECT statement that constrains the number of rows returned by the query
+
+
+offset-PostgreSQL offset clause is essential in PostgreSQL to skip the number of rows before returning the query's output.
+
+example:
+````````
+select * from company limit 4 offset 2;
+
+
+group by clause:
+`````````````````
+The GROUP BY clause is a SQL command that is used to group rows that have the same values. The GROUP BY clause is used in the SELECT statement. Optionally it is used in conjunction with aggregate functions to produce summary reports from the database.
+
+
+example:
+````````
+select age,count(*) from company group by age;
+
+having clause:
+``````````````
+The HAVING Clause enables you to specify conditions that filter which group results appear in the results. The WHERE clause places conditions on the selected columns, whereas the HAVING clause places conditions on groups created by the GROUP BY clause.
+
+
+
+select address,count(*) from company group by address having max(salary)>20000;
+
+
+order by:
+`````````
+
+The SQL ORDER BY clause is used to sort the data in ascending or descending order, based on one or more columns.
+
+
+
+select * from company order by age,salary asc;
+
+select * from company order by age;
+
+select * from company order by age asc;
+
+select * from company order by age desc;
+
+
+
+Enumerated Datatype:
+``````````````````````
+Enumerated (enum) types are data types that comprise a static, ordered set of values. They are equivalent to the enum types supported in a number of programming languages. 
+
+An example of an enum type might be the days of the week, or a set of status values for a piece of data
+
+
+create type mood as enum('sad','ok','happy');
+
+create table person(name text,current_mood mood);
+
+insert into person values('rama','happy');
+insert into person values('rk','ok');
+insert into person values('yash','sad');
+insert into person values('bindhu','extremly happy');
+
+
+
+
+Arrays:
+````````
+create table sal_emp(name text,pay integer[],schedule text[][]);
+
+
+INSERT INTO public.sal_emp(
+	name, pay, schedule)
+	VALUES ('Ram', '{10000,10000,10000,10000}', 
+			'{{"meeting","lunch"},{"training","presentation"}}');
+			
+
+how to update the array:
+```````````````````````
+UPDATE public.sal_emp
+	SET pay='{3000,3000,3000,3000}'
+	WHERE name='Ram';
+	
+	
+note:
+`````		
+array index starts from 1 only in postgres sql.
+
+		
+		
+UPDATE public.sal_emp
+	SET pay[3]=5000 
+	WHERE name='Ram';
+	
+
+UPDATE public.sal_emp
+	SET pay[1:2]='{5000,5000}'
+	WHERE name='Ram';
+
+
+how to append the single value to array column:
+````````````````````````````````````````````````
+query:
+``````
+update sal_emp set pay=array_append(pay,7000);
+
+how to append multiple values to array column:
+``````````````````````````````````````````````
+update sal_emp set pay=array_cat(pay,Array[8000,9000]);
+
+how to remove single vaue from array column:
+````````````````````````````````````````````
+update sal_emp set pay=array_remove(pay,9000);
+
+
+
+
+Gradle:
+``````
+
+gradle is an open source build automation tool that
+is based on the concept of apache maven and ant.
+
+
+build the projet:
+
+  compile the source code
+  execute the source code
+  compile the test code
+  execute the test code
+  packaging the entire project as jar / war 
+  
+  
+  
+maven  
+& gradle
+
+
+mavenized projects -> project configuration -> xml language
+
+
+
+
+It introduces a kotlin and groovy-based DSL(Domain Specific Languagae) instead of xml(extensible markup language) for declaring the project configuration.
+
+
+
+
+Gradle offers an elastic model that can help the developmemnt lifecycle from compiling and packaging code for web and mobile applications.
+
+
+
+It provides support for the building,testing and deploying software on different platforms.
+
+It has been developed for building automation on many languages and platforms including java,scala,android,c,c++ and groovy. 
+
+
+Gradle provides integration with several development tools and servers including eclipse,intellij,jenkins and android studio.
+
+
+Some leading enterprise companies like linkedin,google and netflix use gradle.
+
+
+It is developed to overcome the drawbacks of maven and ant and supports
+a wide range of IDEs.
+
+
+  ant
+
+maven
+
+gradle
+
+
+
+
+
+How to install gradle and setup in windows machine:
+````````````````````````````````````````````````````
+
+url: gradle.org/install/
+
+
+once you install the gradle , we have to set the path for gradle to use it from 
+any directory.
+
+how to set the path for gradle:
+````````````````````````````````
+
+
+edit the system environment variables.
+|
+click on environment variables
+|
+under user varaibles tab
+click on new
+|
+ variable name: path
+ variable value: C:\gradle-7.3.2\bin
+ 
+|
+click on ok(3 times)
+
+
+when we set the path for gradle, we can use all gradle commands from 
+any directory of our machine.
+
+
+how to verify whether gradle got installed or not?
+```````````````````````````````````````````````````
+open the command prompt
+|
+pass the below command
+|
+gradle -v
+
+
+
+
+create first java gradle project:
+``````````````````````````````````
+cmd:/> gradle init
+
+Select type of project to generate:
+  1: basic
+  2: application
+  3: library
+  4: Gradle plugin
+  
+  2
+  
+Select implementation language:
+  1: C++
+  2: Groovy
+  3: Java
+  4: Kotlin
+  5: Scala
+  6: Swift
+  
+  3
+
+Select build script DSL:
+  1: Groovy
+  2: Kotlin
+  
+  1
+
+Select test framework:
+  1: JUnit 4
+  2: TestNG
+  3: Spock
+  4: JUnit Jupiter
+  
+  4
+  
+Project name (default: gradle): myFirstGradleJavaProject
+
+Source package (default: myFirstGradleJavaProject): com.capg.gradle
+
+
+
+
+enter implementation language : 3
+
+select build script dsl: 1(Groovy)
+select test framework: 4(junit jupiter)
+
+
+
+in gradle the main file is : build.gradle(groovy or kotlin)
+
+if it is maven project: pom.xml (project object model)
+
+
+how can i build my gradle project:
+``````````````````````````````````
+cmd:/>gradle build
+
+whenever build happend one build folder gets created under that every file we can 
+observe including jar file
+
+cmd:/>gradle clean
+
+so that existing build folder gets deleted
+
+cmd:/> gradle clean build
+
+
+finally if we want to execute or run the gradle application
+
+cmd:/> gradle run
+
+Hello World
+
+
+
+how to import this gradle project to my eclipse:
+````````````````````````````````````````````````
+
+
+open eclipse
+|
+click on file
+|
+import
+|
+gradle
+|
+existing gradle project
+|
+source folder
+|
+override configuration setting(checkin)
+
+local installation gradle folder: c:/gradle7.2
+
+user gradle folder: .gradle/
+
+java home directory: c:/programfiles/java/jdk1.8
+
+click on finish
+
+  existing gradle project got imported to eclipse and then you can work on the project
+
+
+how to create new gradle project in eclipse:
+````````````````````````````````````````````
+note:
+````
+if we are using old versions eclipse you can't find gradle plugin, to add that 
+go to help --> marketplace --> install 'buildship gradle plugin'
+
+close the eclipse 
+
+and then start it
+
+then only we can create gradle projects in eclipse
+
+
+note: for latest eclipse versions by default gradle plugin is available.
+
+
+file
+|
+new
+|
+others
+|
+grad
+click on next
+
+|
+local installation gradle folder: c:/gradle7.2
+
+user gradle folder: .gradle/
+
+java home directory: c:/programfiles/java/jdk1.8
+
+click on finish
+
+
+
+
+git:
+````
+version control system
+
+official url: https://git-scm.com/download/win
+
+
+once we install git please set the path like gradle in environment variables.
+
+
+
+path: C:\Program Files\Git\bin
+
+
+once we set the path open command prompt and type below command to verify whether
+git got installed or not?
+
+
+cmd:/> git --version
+
+git version 2.34.1.windows.1
+
+
+
+
+
+git repositories links-clone the project
+
+and then you can start to work -development work
+
+commit the project --> into the git repository
+
+
+
+save our project -> in the remote workspace -> not locally 
+
+remote machine
+
+remote server
+
+-> who will provide such kind of facility?
+
+   web hosting servers
+   
+      -github
+	  -bitbucket
+	  -svn
+	  ....
+	  
+what is github:
+```````````````
+GitHub is a code hosting platform for version control and collaboration. 
+It lets you and others work together on projects from anywhere.
+
+
+
+open gitbash 
+
+
+
+git config --global user.name="somnapalli"
+
+git config --global user.email="rams.11mca@gmail.com"
+
+
+ cd e:
+ cd capgemenin_dec2nd/git
+ ....current directory
+ 
+
+
+
+
+git init
+git add .
+git commit -m "FirstCommit"
+git remote set-url origin https://github.com/somanapalli/GitProject.git
+ siging: username: somanapalli, password: ....
+git push -u origin master
+
+
+go to your github repository once refresh so that all the files are available in the
+remote github repository.
+
+
+
+
+
+How to add github project to eclipse:
+``````````````````````````````````````
+
+1.How to create github repository
+2.How to clone repository in eclipse
+3.How to add eclipse project to github repository
+4.How to commit,push and pull the changes
+
+
+
+
+
+1.create github account (signup) and signin with username and password
+
+2.Start a project --> create a repository in github
+
+3.Start eclipse
+
+4.Goto perspective -> Git Repostiories and click on Add Git Repostiories
+
+5.create a project in eclipse
+
+6.do a right click on project -> team -> shareproject-> add to git repositories
+
+7.commit and push the project to the repo
+
+8.commit and push every change to the repo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
